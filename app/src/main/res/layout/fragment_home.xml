@@ -16,8 +16,6 @@
           android:src="@drawable/pic33"
           android:foreground="#1E0B0D10"
           android:scaleType="centerCrop"
-
-
            />
       <LinearLayout
           android:layout_width="match_parent"
@@ -27,12 +25,12 @@
          <LinearLayout
              android:layout_width="match_parent"
              android:layout_height="wrap_content"
-             android:layout_marginTop="36dp"
+             android:paddingVertical="8dp"
+             android:layout_marginTop="12dp"
              android:gravity="center">
 
             <RelativeLayout
                 android:layout_width="wrap_content"
-                android:padding="8dp"
                 android:layout_height="wrap_content">
                <ImageView
                    android:layout_width="wrap_content"
@@ -57,7 +55,7 @@
             <TextView
                 android:layout_width="1dp"
                 android:background="@drawable/divider"
-                android:layout_marginHorizontal="12dp"
+                android:layout_marginHorizontal="20dp"
 
                 android:layout_height="13dp"
 
@@ -68,7 +66,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/for_you"
                 android:layout_marginRight="4dp"
-                android:padding="8dp"
+
                 android:textColor="@color/white"
                 android:fontFamily="@font/inter_medium"
                 android:textSize="15sp"
@@ -102,49 +100,48 @@
                    android:layout_gravity="center"
                    android:layout_height="wrap_content">
 
+<!--                  <com.google.android.material.card.MaterialCardView-->
+<!--                      android:layout_width="38dp"-->
+<!--                      app:cardCornerRadius="100dp"-->
+<!--                      android:layout_gravity="center_vertical"-->
+<!--                      app:cardBackgroundColor="@android:color/transparent"-->
+<!--                      android:layout_height="38dp">-->
+<!--                     <ImageView-->
+<!--                         android:layout_width="match_parent"-->
+<!--                         android:layout_gravity="center"-->
+<!--                         android:layout_height="match_parent"-->
+<!--                         android:src="@drawable/avatar_man"/>-->
+
+<!--                  </com.google.android.material.card.MaterialCardView>-->
+<!--                  <com.google.android.material.card.MaterialCardView-->
+<!--                      android:layout_width="38dp"-->
+<!--                      app:cardCornerRadius="100dp"-->
+<!--                      android:layout_gravity="center_vertical"-->
+<!--                      app:cardBackgroundColor="@android:color/transparent"-->
+<!--                      app:strokeWidth="1.5dp"-->
+<!--                      app:strokeColor="@color/red"-->
+<!--                      android:layout_height="38dp">-->
+<!--                     <ImageView-->
+<!--                         android:layout_width="match_parent"-->
+<!--                         android:layout_gravity="center"-->
+<!--                         android:padding="3dp"-->
+<!--                         android:layout_height="match_parent"-->
+
+<!--                         android:src="@drawable/avatar_man"/>-->
+
+<!--                  </com.google.android.material.card.MaterialCardView>-->
                   <com.google.android.material.card.MaterialCardView
-                      android:layout_width="32dp"
-                      app:cardCornerRadius="100dp"
-                      android:layout_gravity="center_vertical"
-                      app:cardBackgroundColor="@android:color/transparent"
-                      app:strokeColor="@color/red"
-                      android:layout_height="32dp">
-                     <ImageView
-                         android:layout_width="32dp"
-                         android:layout_gravity="center"
-                         android:layout_height="32dp"
-                         android:src="@drawable/avatar_man"/>
-
-                  </com.google.android.material.card.MaterialCardView>
-
-                  <com.google.android.material.card.MaterialCardView
-                      android:layout_width="36dp"
-                      app:cardCornerRadius="100dp"
-                      android:layout_gravity="center_vertical"
-                      app:cardBackgroundColor="@android:color/transparent"
-                      app:strokeWidth="1dp"
-                      android:padding="2dp"
-                      app:strokeColor="@color/red"
-                      android:layout_height="36dp">
-                     <ImageView
-                         android:layout_width="32dp"
-                         android:layout_gravity="center"
-                         android:layout_height="32dp"
-
-                         android:src="@drawable/avatar_man"/>
-
-                  </com.google.android.material.card.MaterialCardView>
-                  <com.google.android.material.card.MaterialCardView
-                      android:layout_width="36dp"
+                      android:layout_width="38dp"
                       app:cardCornerRadius="100dp"
                       app:cardBackgroundColor="@android:color/transparent"
                       app:strokeColor="@color/red"
                       app:strokeWidth="1dp"
                       android:padding="2dp"
-                      android:layout_height="36dp">
+                      android:layout_height="38dp">
                      <ImageView
-                         android:layout_width="32dp"
-                         android:layout_height="32dp"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:padding="3dp"
                          android:layout_gravity="center"
                          android:src="@drawable/avatar_man"/>
 
@@ -165,7 +162,7 @@
                             android:textColor="@color/white"
 
 
-                            android:textSize="6sp">
+                            android:textSize="7sp">
 
                         </TextView>
                      </LinearLayout>
@@ -190,14 +187,21 @@
                    android:layout_marginLeft="12dp"
                    android:textSize="15sp"
                    />
-               <ImageView
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:layout_marginLeft="8dp"
+               <androidx.cardview.widget.CardView
+                   android:layout_width="18dp"
+                   app:cardCornerRadius="100dp"
+                   android:layout_height="18dp"
+                   android:layout_marginLeft="7dp"
+                   app:cardBackgroundColor="@color/blue"
                    android:layout_gravity="center_vertical"
-
-
-                   android:src="@drawable/ch"/>
+                   >
+                  <ImageView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:src="@drawable/checkk"
+                      />
+               </androidx.cardview.widget.CardView>
                <com.google.android.material.button.MaterialButton
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
@@ -205,6 +209,8 @@
                    android:minHeight="0dp"
                    android:paddingHorizontal="6dp"
                    android:paddingVertical="2dp"
+                   app:elevation="0dp"
+                   android:elevation="0dp"
                    android:fontFamily="@font/inter_medium"
                    android:layout_gravity="center_vertical"
                    android:layout_marginLeft="12dp"
@@ -220,224 +226,24 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Another day, another beach. I want to leave like this forever #travel #nature #ocean"
+                android:text="Another day, another beach. I want to leave like\nthis forever #travel #nature #ocean"
                 android:textColor="@color/white"
                 android:fontFamily="@font/inter_regular"
+                android:letterSpacing="0"
+
                 android:layout_marginVertical="8dp"
                 android:textSize="12sp"
                 />
-<!--            <LinearLayout-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:orientation="horizontal"-->
-<!--                android:layout_weight="1"-->
-<!--                android:gravity="center_vertical"-->
-<!--                >-->
-
-
-
-<!--                  <com.google.android.material.card.MaterialCardView-->
-
-<!--                      android:layout_width="0dp"-->
-<!--                      android:layout_weight="0.44"-->
-<!--                      android:layout_gravity="center"-->
-<!--                      android:backgroundTint="#177E7D7D"-->
-<!--                      android:elevation="0dp"-->
-<!--                      app:cardCornerRadius="6dp"-->
-<!--                      app:cardElevation="0dp"-->
-<!--                      android:layout_height="32dp">-->
-<!--                     <com.google.android.material.card.MaterialCardView-->
-<!--                         android:layout_width="wrap_content"-->
-<!--                         android:layout_gravity="center"-->
-<!--                         android:layout_weight="0.3"-->
-<!--                         android:backgroundTint="#29FFFFFF"-->
-<!--                         android:elevation="0dp"-->
-<!--                         app:cardCornerRadius="6dp"-->
-<!--                         app:cardElevation="0dp"-->
-<!--                         android:layout_height="32dp">-->
-<!--                        <TextView-->
-<!--                            android:id="@+id/scrollingtext"-->
-<!--                            android:layout_width="match_parent"-->
-<!--                            android:padding="6dp"-->
-<!--                            android:gravity="center_vertical"-->
-<!--                            android:layout_gravity="center_vertical"-->
-<!--                            android:drawableLeft="@drawable/cd___small"-->
-<!--                            android:backgroundTint="@android:color/transparent"-->
-<!--                            android:drawablePadding="8dp"-->
-<!--                            android:textColor="@color/white"-->
-<!--                            android:layout_height="wrap_content"-->
-<!--                            android:textSize="11sp"-->
-<!--                            android:text="Kinabeats – Can We Kiss Forever"-->
-<!--                            android:focusable="true"-->
-<!--                            android:focusableInTouchMode="true"-->
-<!--                            android:singleLine="true"-->
-<!--                            android:scrollHorizontally="true"-->
-<!--                            android:ellipsize="marquee"-->
-<!--                            android:marqueeRepeatLimit ="marquee_forever"/>-->
-
-<!--                     </com.google.android.material.card.MaterialCardView>-->
-<!--&lt;!&ndash;                     <TextView&ndash;&gt;-->
-<!--&lt;!&ndash;                         android:id="@+id/scrollingtext"&ndash;&gt;-->
-<!--&lt;!&ndash;                         android:layout_width="match_parent"&ndash;&gt;-->
-<!--&lt;!&ndash;                         android:padding="6dp"&ndash;&gt;-->
-<!--&lt;!&ndash;                         android:gravity="center_vertical"&ndash;&gt;-->
-<!--&lt;!&ndash;                         android:layout_gravity="center_vertical"&ndash;&gt;-->
-<!--&lt;!&ndash;                         android:drawableLeft="@drawable/cd___small"&ndash;&gt;-->
-<!--&lt;!&ndash;                         android:backgroundTint="@android:color/transparent"&ndash;&gt;-->
-<!--&lt;!&ndash;                         android:drawablePadding="8dp"&ndash;&gt;-->
-<!--&lt;!&ndash;                         android:textColor="@color/white"&ndash;&gt;-->
-<!--&lt;!&ndash;                         android:layout_height="wrap_content"&ndash;&gt;-->
-<!--&lt;!&ndash;                         android:textSize="10sp"&ndash;&gt;-->
-<!--&lt;!&ndash;                         android:text="http://android-er.blogspot.com/ ahahahahhhah"&ndash;&gt;-->
-<!--&lt;!&ndash;                         android:focusable="true"&ndash;&gt;-->
-<!--&lt;!&ndash;                         android:focusableInTouchMode="true"&ndash;&gt;-->
-<!--&lt;!&ndash;                         android:singleLine="true"&ndash;&gt;-->
-<!--&lt;!&ndash;                         android:scrollHorizontally="true"&ndash;&gt;-->
-<!--&lt;!&ndash;                         android:ellipsize="marquee"&ndash;&gt;-->
-<!--&lt;!&ndash;                         android:marqueeRepeatLimit ="marquee_forever"/>&ndash;&gt;-->
-
-<!--                  </com.google.android.material.card.MaterialCardView>-->
-
-
-
-
-
-
-
-<!--                  <com.google.android.material.button.MaterialButton-->
-<!--                      android:layout_width="0dp"-->
-<!--                      android:layout_weight="0.19"-->
-<!--                      android:layout_marginLeft="8dp"-->
-<!--                      android:paddingHorizontal="8dp"-->
-<!--                      android:layout_height="wrap_content"-->
-<!--                      android:layout_centerHorizontal="true"-->
-<!--                      android:paddingVertical="8dp"-->
-<!--                      android:text="999k"-->
-<!--                      app:cornerRadius="6dp"-->
-<!--                      android:insetTop="0dp"-->
-<!--                      android:fontFamily="@font/inter_medium"-->
-<!--                      android:insetBottom="0dp"-->
-<!--                      android:minHeight="0dp"-->
-<!--                      android:minWidth="0dp"-->
-<!--                      android:textSize="11sp"-->
-<!--                      app:backgroundTint="#FF5B71"-->
-<!--                      android:drawableLeft="@drawable/heart___small"-->
-<!--                      />-->
-
-
-
-<!--                  <com.google.android.material.card.MaterialCardView-->
-
-<!--                      android:layout_width="0dp"-->
-<!--                      android:layout_marginLeft="8dp"-->
-<!--                      android:layout_weight="0.18"-->
-<!--                      android:backgroundTint="#177E7D7D"-->
-<!--                      android:elevation="0dp"-->
-<!--                      app:cardCornerRadius="6dp"-->
-<!--                      app:cardElevation="0dp"-->
-<!--                      android:layout_height="wrap_content">-->
-<!--                     <com.google.android.material.card.MaterialCardView-->
-<!--                         android:layout_width="match_parent"-->
-<!--                         android:backgroundTint="#29FFFFFF"-->
-<!--                         android:elevation="0dp"-->
-<!--                         app:cardCornerRadius="6dp"-->
-<!--                         app:cardElevation="0dp"-->
-<!--                         android:layout_height="wrap_content">-->
-<!--                        <TextView-->
-<!--                            android:layout_width="match_parent"-->
-<!--                            android:paddingVertical="8dp"-->
-
-<!--                            android:layout_marginHorizontal="10dp"-->
-<!--                            android:gravity="center_vertical"-->
-<!--                            android:layout_gravity="center_vertical"-->
-<!--                            android:drawableLeft="@drawable/cd___small"-->
-<!--                            android:backgroundTint="@android:color/transparent"-->
-<!--                            android:drawablePadding="8dp"-->
-<!--                            android:textColor="@color/white"-->
-<!--                            android:layout_height="wrap_content"-->
-<!--                            android:textSize="11sp"-->
-<!--                            android:text="99k"-->
-<!--                            android:focusable="true"-->
-<!--                            android:focusableInTouchMode="true"-->
-<!--                            android:singleLine="true"-->
-<!--                            android:scrollHorizontally="true"-->
-<!--                            android:ellipsize="marquee"-->
-<!--                            android:marqueeRepeatLimit ="marquee_forever"/>-->
-
-<!--                     </com.google.android.material.card.MaterialCardView>-->
-<!--                     &lt;!&ndash;                     <TextView&ndash;&gt;-->
-<!--                     &lt;!&ndash;                         android:id="@+id/scrollingtext"&ndash;&gt;-->
-<!--                     &lt;!&ndash;                         android:layout_width="match_parent"&ndash;&gt;-->
-<!--                     &lt;!&ndash;                         android:padding="6dp"&ndash;&gt;-->
-<!--                     &lt;!&ndash;                         android:gravity="center_vertical"&ndash;&gt;-->
-<!--                     &lt;!&ndash;                         android:layout_gravity="center_vertical"&ndash;&gt;-->
-<!--                     &lt;!&ndash;                         android:drawableLeft="@drawable/cd___small"&ndash;&gt;-->
-<!--                     &lt;!&ndash;                         android:backgroundTint="@android:color/transparent"&ndash;&gt;-->
-<!--                     &lt;!&ndash;                         android:drawablePadding="8dp"&ndash;&gt;-->
-<!--                     &lt;!&ndash;                         android:textColor="@color/white"&ndash;&gt;-->
-<!--                     &lt;!&ndash;                         android:layout_height="wrap_content"&ndash;&gt;-->
-<!--                     &lt;!&ndash;                         android:textSize="10sp"&ndash;&gt;-->
-<!--                     &lt;!&ndash;                         android:text="http://android-er.blogspot.com/ ahahahahhhah"&ndash;&gt;-->
-<!--                     &lt;!&ndash;                         android:focusable="true"&ndash;&gt;-->
-<!--                     &lt;!&ndash;                         android:focusableInTouchMode="true"&ndash;&gt;-->
-<!--                     &lt;!&ndash;                         android:singleLine="true"&ndash;&gt;-->
-<!--                     &lt;!&ndash;                         android:scrollHorizontally="true"&ndash;&gt;-->
-<!--                     &lt;!&ndash;                         android:ellipsize="marquee"&ndash;&gt;-->
-<!--                     &lt;!&ndash;                         android:marqueeRepeatLimit ="marquee_forever"/>&ndash;&gt;-->
-
-<!--                  </com.google.android.material.card.MaterialCardView>-->
-
-
-
-<!--                  <com.google.android.material.card.MaterialCardView-->
-<!--                      android:layout_width="0dp"-->
-<!--                      android:layout_weight="0.1"-->
-<!--                      android:layout_marginLeft="8dp"-->
-<!--                      android:elevation="0dp"-->
-<!--                      app:cardCornerRadius="6dp"-->
-<!--                      app:cardElevation="0dp"-->
-<!--                      android:layout_height="wrap_content"-->
-<!--                      android:backgroundTint="#177E7D7D"-->
-<!--                      >-->
-<!--                     <com.google.android.material.card.MaterialCardView-->
-<!--                         android:layout_width="wrap_content"-->
-<!--                         android:elevation="0dp"-->
-<!--                         android:layout_centerHorizontal="true"-->
-<!--                         app:cardCornerRadius="6dp"-->
-<!--                         app:cardElevation="0dp"-->
-<!--                         android:layout_height="wrap_content"-->
-<!--                         android:backgroundTint="#29FFFFFF"-->
-<!--                         >-->
-<!--                        <ImageView-->
-<!--                            android:layout_width="wrap_content"-->
-<!--                            android:layout_height="wrap_content"-->
-<!--                            android:layout_gravity="center"-->
-<!--                            android:layout_margin="8dp"-->
-<!--                            android:id="@+id/btnShare"-->
-<!--                            android:src="@drawable/share___small"-->
-
-<!--                            />-->
-
-
-<!--                     </com.google.android.material.card.MaterialCardView>-->
-
-
-<!--                  </com.google.android.material.card.MaterialCardView>-->
-
-
-
-
-<!--            </LinearLayout>-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="32dp"
-
+                android:weightSum="1"
                 android:orientation="horizontal"
                 android:gravity="center_vertical">
                <com.google.android.material.card.MaterialCardView
 
                    android:layout_width="0dp"
-                   android:layout_weight="0.44"
+                   android:layout_weight="0.45918367346"
                    android:layout_gravity="center"
                    android:backgroundTint="#177E7D7D"
                    android:elevation="0dp"
@@ -495,32 +301,31 @@
                   <!--                         android:marqueeRepeatLimit ="marquee_forever"/>-->
 
                </com.google.android.material.card.MaterialCardView>
-
-
-
-
-
-               <com.google.android.material.card.MaterialCardView
-
+               <View
                    android:layout_width="0dp"
-                   android:layout_marginLeft="8dp"
-                   android:layout_weight="0.18"
+                   android:layout_height="0dp"
+                   android:layout_weight="0.03061224489"
+                   />
+               <com.google.android.material.card.MaterialCardView
+                   android:layout_width="0dp"
+                   android:layout_weight="0.18367346938"
                    android:backgroundTint="#FF5B71"
                    android:elevation="0dp"
                    app:cardCornerRadius="6dp"
+                   android:layout_gravity="center_vertical"
                    app:cardElevation="0dp"
                    android:layout_height="wrap_content">
-
                   <TextView
                       android:layout_width="match_parent"
-                      android:padding="8dp"
-                      android:drawablePadding="6dp"
+                      android:drawablePadding="7dp"
+                      android:padding="7dp"
                       android:drawableLeft="@drawable/heart___small"
                       android:backgroundTint="@android:color/transparent"
                       android:textColor="@color/white"
                       android:layout_height="wrap_content"
-                      android:textSize="11sp"
+                      android:textSize="12sp"
                       android:text="999k"
+                      android:layout_gravity="center"
                       android:focusable="true"
                       android:focusableInTouchMode="true"
                       android:singleLine="true"
@@ -550,33 +355,16 @@
 
                </com.google.android.material.card.MaterialCardView>
 
-               <!--            <com.google.android.material.button.MaterialButton-->
-               <!--                android:layout_width="0dp"-->
-               <!--                android:layout_weight="0.19"-->
-               <!--                android:layout_marginLeft="8dp"-->
-               <!--                android:paddingHorizontal="8dp"-->
-               <!--                android:layout_height="wrap_content"-->
-               <!--                android:layout_centerHorizontal="true"-->
-               <!--                android:paddingVertical="8dp"-->
-               <!--                android:text="999k"-->
-               <!--                app:cornerRadius="6dp"-->
-               <!--                android:insetTop="0dp"-->
-               <!--                android:fontFamily="@font/inter_medium"-->
-               <!--                android:insetBottom="0dp"-->
-               <!--                android:minHeight="0dp"-->
-               <!--                android:minWidth="0dp"-->
-               <!--                android:textSize="11sp"-->
-               <!--                app:backgroundTint="#FF5B71"-->
-               <!--                android:drawableLeft="@drawable/heart___small"-->
-               <!--                />-->
 
-
+               <View
+                   android:layout_width="0dp"
+                   android:layout_height="0dp"
+                   android:layout_weight="0.03061224489"
+                   />
 
                <com.google.android.material.card.MaterialCardView
-
                    android:layout_width="0dp"
-                   android:layout_marginLeft="8dp"
-                   android:layout_weight="0.18"
+                   android:layout_weight="0.18367346938"
                    android:backgroundTint="#177E7D7D"
                    android:elevation="0dp"
                    app:cardCornerRadius="6dp"
@@ -587,28 +375,25 @@
                       android:backgroundTint="#29FFFFFF"
                       android:elevation="0dp"
                       app:cardCornerRadius="6dp"
+                      android:id="@+id/btnComment"
                       app:cardElevation="0dp"
                       android:layout_height="wrap_content">
                      <TextView
                          android:layout_width="match_parent"
-                         android:paddingVertical="8dp"
-
-                         android:layout_marginHorizontal="10dp"
+                         android:padding="7dp"
                          android:gravity="center_vertical"
                          android:layout_gravity="center_vertical"
-                         android:drawableLeft="@drawable/cd___small"
+                         android:drawableLeft="@drawable/comments___small"
                          android:backgroundTint="@android:color/transparent"
-                         android:drawablePadding="5dp"
+                         android:drawablePadding="7dp"
                          android:textColor="@color/white"
                          android:layout_height="wrap_content"
-                         android:textSize="11sp"
+                         android:textSize="12sp"
+                         android:clipToOutline="true"
                          android:text="999k"
                          android:focusable="true"
                          android:focusableInTouchMode="true"
-                         android:singleLine="true"
-                         android:scrollHorizontally="true"
-                         android:ellipsize="marquee"
-                         android:marqueeRepeatLimit ="marquee_forever"/>
+                         />
 
                   </com.google.android.material.card.MaterialCardView>
                   <!--                     <TextView-->
@@ -633,12 +418,15 @@
 
                </com.google.android.material.card.MaterialCardView>
 
-
+           <View
+               android:layout_width="0dp"
+               android:layout_height="0dp"
+               android:layout_weight="0.03061224489"
+               />
 
                <com.google.android.material.card.MaterialCardView
                    android:layout_width="0dp"
-                   android:layout_weight="0.1"
-                   android:layout_marginLeft="8dp"
+                   android:layout_weight="0.08163265306"
                    android:elevation="0dp"
                    app:cardCornerRadius="6dp"
                    app:cardElevation="0dp"
@@ -681,6 +469,7 @@
 
       </LinearLayout>
    </RelativeLayout>
+
 
 
 

@@ -50,12 +50,11 @@ dependencies {
     implementation 'androidx.coordinatorlayout:coordinatorlayout:1.2.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'androidx.databinding:library:3.2.0-alpha11'
     testImplementation 'junit:junit:4.13.2'
     implementation 'com.github.dmytrodanylyk.shadow-layout:library:1.0.1'
     androidTestImplementation 'androidx.test.ext:junit:1.1.4'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
-    implementation 'net.orandja.shadowlayout:shadowlayout:1.0.1'
-    implementation 'com.github.virtualvivek:BlurShadowImageView:4.0'
-    implementation 'com.github.SaltedfishCaptain:ShadowLayout:v0.9.3'
-    implementation 'com.github.dmytrodanylyk.shadow-layout:library:1.0.1'
+
+
 }

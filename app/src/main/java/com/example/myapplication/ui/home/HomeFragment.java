@@ -33,10 +33,16 @@ public class HomeFragment extends Fragment {
         binding.viewFlipper.setAutoStart(true);
         binding.scrollingtext.setSelected(true);
         binding.viewFlipper.setFlipInterval(2000);
+        binding.btnComment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).navigate(R.id.action_navigation_home_to_commentBottomSheet);
+            }
+        });
         binding.btnShare.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Navigation.findNavController(view).navigate(R.id.action_navigation_home_to_reposrtFragment);
+                Navigation.findNavController(view).navigate(R.id.action_navigation_home_to_shareBottomSheet);
             }
         });
 
@@ -50,9 +56,6 @@ public class HomeFragment extends Fragment {
         return root;
     }
 
-    @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        binding = null;
-    }
+//
+
 }

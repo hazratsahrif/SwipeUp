@@ -9,10 +9,16 @@
     <color name="white">#FFFFFFFF</color>
     <color name="light_black">#2B323B</color>
     <color name="grey">#6C7989</color>
-    <color name="red">#FF5B71</color>
     <color name="light_white">#F3F5F6</color>
     <color name="dark_grey">#2B323B</color>
     <color name="dark_black">#0E141B</color>
     <color name="light_white_color">#8FFFFFFF</color>
+    <color name="red">#FF5B71</color>
+    <color name="color_telegram">#4EA4F6</color>
+    <color name="color_viber">#6D5DD9</color>
+    <color name="fb_color">#3179F4</color>
+    <color name="sms_color">#5FC87C</color>
+    <color name="twitter_color">#41A2FE</color>
+    <color name="blue">#10C7F5</color>
 
 </resources>

@@ -3,6 +3,7 @@ package com.example.myapplication.ui.home;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.fragment.NavHostFragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import android.view.LayoutInflater;
@@ -46,6 +47,13 @@ public class ReportFragment extends Fragment {
         binding.rv.setLayoutManager(new LinearLayoutManager(getContext()));
         binding.rv.setHasFixedSize(true);
         binding.rv.setAdapter(reportAdpater);
+
+        binding.btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(ReportFragment.this).navigateUp();
+            }
+        });
 
         return binding.getRoot();
     }
