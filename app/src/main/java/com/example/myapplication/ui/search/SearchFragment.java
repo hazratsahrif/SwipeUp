@@ -37,6 +37,7 @@ import com.example.myapplication.models.TrendingTravelModel;
 import java.util.ArrayList;
 import java.util.List;
 
+import adapter.DiscoverHashTagAdapter;
 import adapter.TrendingAdapter;
 import adapter.TrendingLiveAdapter;
 import adapter.TrendingTravelAdapter;
@@ -146,7 +147,7 @@ public class SearchFragment extends Fragment {
         rvLive.setLayoutManager(new LinearLayoutManager(getContext(),LinearLayoutManager.HORIZONTAL,false));
         rvLive.setAdapter(adapteLiver);
 
-        TrendingTravelAdapter adaptertravel = new TrendingTravelAdapter(trlist);
+        DiscoverHashTagAdapter adaptertravel = new DiscoverHashTagAdapter(trlist);
         rvtravel.setLayoutManager(new LinearLayoutManager(getContext(),LinearLayoutManager.HORIZONTAL,false));
         rvtravel.setAdapter(adaptertravel);
 

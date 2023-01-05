@@ -95,10 +95,11 @@
               app:cardElevation="0dp"
               android:layout_height="42dp">
               <ImageView
-                  android:layout_width="match_parent"
-                  android:layout_height="match_parent"
+                  android:layout_width="40dp"
+                  android:layout_height="40dp"
                   android:src="@drawable/ellipse_9"
                   android:id="@+id/ivAvatar"
+                  android:layout_gravity="center"
                   android:layout_margin="1dp"
                   />
           </com.google.android.material.card.MaterialCardView>

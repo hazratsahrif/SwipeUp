@@ -86,13 +86,13 @@
                 android:orientation="vertical"
                 >
                 <com.google.android.material.card.MaterialCardView
-                    android:layout_width="24dp"
+                    android:layout_width="25dp"
                     app:cardCornerRadius="100dp"
                     android:layout_margin="12dp"
                     app:cardBackgroundColor="@android:color/transparent"
                     app:strokeColor="#FF5B71"
                     android:layout_gravity="center_horizontal"
-                    android:layout_height="24dp">
+                    android:layout_height="25dp">
                  <ImageView
                      android:layout_width="wrap_content"
                      android:layout_height="wrap_content"
@@ -100,24 +100,24 @@
                      android:src="@drawable/ellipse"
                      />
                 </com.google.android.material.card.MaterialCardView>
+
                 <com.google.android.material.button.MaterialButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:minHeight="0dp"
+                    android:layout_alignParentRight="true"
+                   android:layout_margin="12dp"
+                    android:fontFamily="@font/inter_semibold"
                     android:insetTop="0dp"
                     android:insetBottom="0dp"
                     android:minWidth="0dp"
-                    android:fontFamily="@font/inter_semibold"
-                    android:layout_margin="12dp"
+                    android:minHeight="0dp"
+                    android:paddingHorizontal="7dp"
+                    android:paddingVertical="3dp"
                     android:text="Live"
-                    app:cornerRadius="6dp"
-                    android:layout_alignParentRight="true"
                     android:textAllCaps="false"
                     android:textSize="12sp"
-                    android:paddingVertical="4dp"
-                    android:paddingHorizontal="8dp"
                     app:backgroundTint="#FF5B71"
-                    />
+                    app:cornerRadius="6dp" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
