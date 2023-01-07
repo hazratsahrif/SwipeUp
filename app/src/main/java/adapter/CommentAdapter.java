@@ -23,15 +23,17 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.ViewMode
     CommentsBinding binding;
     List<BottomCommentDataModel> itemList;
     List<CommentDataModel> chidlList;
+    adapter.onLongPress onLongPress;
     Context context;
     boolean isClicked = false;
 
 
 
 
-    public CommentAdapter(List<BottomCommentDataModel> itemList, Context context) {
+    public CommentAdapter(List<BottomCommentDataModel> itemList, Context context, adapter.onLongPress onLongPress) {
         this.itemList = itemList;
         this.context = context;
+        this.onLongPress = onLongPress;
     }
 
     @NonNull
@@ -50,8 +52,8 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.ViewMode
         holder.binding.tvDay.setText(model.getTvDay());
         holder.binding.tvUserName.setText(model.getTvUserName());
         chidlList= model.getList();
-        String text = "<font color=#000000>"+holder.binding.tvMessage.getText()+"</font> <font color=#6C7989>Reply</font>";
-        holder.binding.tvMessage.setText(Html.fromHtml(text));
+//        String text = "<font color=#000000>"+holder.binding.tvMessage.getText()+"</font> <font color=#6C7989>Reply</font>";
+//        holder.binding.tvMessage.setText(Html.fromHtml(text));
 
         boolean isExpandable = model.isExpandable();
 
@@ -70,9 +72,15 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.ViewMode
 
             }
         });
+        holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View view) {
+                onLongPress.onPress(true);
+                return false;
+            }
+        });
 
         if(model.isCreator()){
-            holder.binding.cvBorder.setStrokeWidth(2);
             holder.binding.tvCreator.setVisibility(View.VISIBLE);
         }
         else {
@@ -81,10 +89,11 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.ViewMode
         }
         holder.binding.expandedLayout.setVisibility(isExpandable ? View.VISIBLE: View.GONE);
         if(isExpandable){
-            holder.binding.tvView.setCompoundDrawablesWithIntrinsicBounds(null,null,context.getResources().getDrawable(R.drawable.ic_baseline_keyboard_arrow_up_24),null);
+            holder.binding.expandLayout.setVisibility(View.GONE);
+            holder.binding.tvView.setCompoundDrawablesWithIntrinsicBounds(null,null,context.getResources().getDrawable(R.drawable.chevron_up),null);
         }
         else {
-            holder.binding.tvView.setCompoundDrawablesWithIntrinsicBounds(null,null,context.getResources().getDrawable(R.drawable.ic_baseline_keyboard_arrow_down_24),null);
+            holder.binding.tvView.setCompoundDrawablesWithIntrinsicBounds(null,null,context.getResources().getDrawable(R.drawable.chevron_down),null);
         }
         NestedCommentAdapter adapter = new NestedCommentAdapter(chidlList,context);
         holder.binding.childRecyclerView.setLayoutManager(new LinearLayoutManager(holder.itemView.getContext()));
@@ -115,6 +124,11 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.ViewMode
             super(binding.getRoot());
             this.binding=binding;
         }
+    }
+
+    public interface onLongPress {
+        void onPress(boolean isClick);
+
     }
 
 }

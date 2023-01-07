@@ -28,7 +28,7 @@ public class ReportFragment extends Fragment {
         // Inflate the layout for this fragment
         binding = FragmentReposrtBinding.inflate(inflater,container,false);
         textList = new ArrayList<>();
-        textList.add("Select a reason");
+
 
         textList.add("Misleading information");
         textList.add("Dangerous organizations and individuals");

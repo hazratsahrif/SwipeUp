@@ -54,6 +54,9 @@
         android:label="fragment_comment_bottom_sheet"
         tools:layout="@layout/fragment_comment_bottom_sheet" >
 
+        <action
+            android:id="@+id/action_commentBottomSheet_to_copyDialogFragment"
+            app:destination="@id/copyDialogFragment" />
     </dialog>
     <fragment
         android:id="@+id/profileFragment"
@@ -109,6 +112,11 @@
         android:name="com.example.myapplication.ui.search.RecentSearchFragment"
         android:label="fragment_recent_search"
         tools:layout="@layout/fragment_recent_search" />
+    <dialog
+        android:id="@+id/copyDialogFragment"
+        android:name="utils.CopyDialogFragment"
+        android:label="fragment_copy_dialogragment"
+        tools:layout="@layout/fragment_copy_dialogragment" />
 
 
 </navigation>

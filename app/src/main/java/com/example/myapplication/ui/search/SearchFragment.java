@@ -146,12 +146,10 @@ public class SearchFragment extends Fragment {
         TrendingLiveAdapter adapteLiver = new TrendingLiveAdapter(tlist);
         rvLive.setLayoutManager(new LinearLayoutManager(getContext(),LinearLayoutManager.HORIZONTAL,false));
         rvLive.setAdapter(adapteLiver);
-
         DiscoverHashTagAdapter adaptertravel = new DiscoverHashTagAdapter(trlist);
+
         rvtravel.setLayoutManager(new LinearLayoutManager(getContext(),LinearLayoutManager.HORIZONTAL,false));
         rvtravel.setAdapter(adaptertravel);
-
-
         binding.btnScan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -185,13 +183,11 @@ public class SearchFragment extends Fragment {
         list.add(new TrendingStoryModel(R.drawable.live___larger,R.drawable.ann,"Anny"));
         list.add(new TrendingStoryModel(R.drawable.story___larger,R.drawable.kris,"Kris"));
         list.add(new TrendingStoryModel(R.drawable.story___larger,R.drawable.jones,"Jones"));
-
         tlist.add(new TrendingLiveModel(R.drawable.story___larger,R.drawable.jenny,"Jenyy"));
         tlist.add(new TrendingLiveModel(R.drawable.travel,R.drawable.regular,"Hamza"));
         tlist.add(new TrendingLiveModel(R.drawable.live___larger,R.drawable.ann,"Anny"));
         tlist.add(new TrendingLiveModel(R.drawable.story___larger,R.drawable.kris,"Kris"));
         tlist.add(new TrendingLiveModel(R.drawable.story___larger,R.drawable.jones,"Jones"));
-
         trlist.add(new TrendingTravelModel(R.drawable.travel,"213.3k"));
         trlist.add(new TrendingTravelModel(R.drawable.story___larger,"411k"));
         trlist.add(new TrendingTravelModel(R.drawable.live___larger,"5678k"));

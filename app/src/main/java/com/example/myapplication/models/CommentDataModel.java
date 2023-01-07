@@ -4,7 +4,7 @@ public class CommentDataModel {
 
     String tvUserName, tvDay, tvMessage;
     int ivAvatar;
-    boolean isCreator;
+    boolean isCreator, isExpandable;
 
     public String getTvUserName() {
         return tvUserName;
@@ -46,11 +46,20 @@ public class CommentDataModel {
         isCreator = creator;
     }
 
-    public CommentDataModel(String tvUserName, String tvDay, String tvMessage, int ivAvatar, boolean isCreator) {
+    public boolean isExpandable() {
+        return isExpandable;
+    }
+
+    public void setExpandable(boolean expandable) {
+        isExpandable = expandable;
+    }
+
+    public CommentDataModel(String tvUserName, String tvDay, String tvMessage, int ivAvatar, boolean isCreator, boolean isExpandable) {
         this.tvUserName = tvUserName;
         this.tvDay = tvDay;
         this.tvMessage = tvMessage;
         this.ivAvatar = ivAvatar;
         this.isCreator = isCreator;
+        this.isExpandable = isExpandable;
     }
 }

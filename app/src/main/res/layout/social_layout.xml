@@ -2,7 +2,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_marginHorizontal="12dp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <LinearLayout
         android:layout_width="wrap_content"
@@ -13,6 +12,7 @@
             android:layout_width="48dp"
             app:cardCornerRadius="100dp"
             android:id="@+id/cvBackground"
+            android:layout_marginHorizontal="12dp"
             android:elevation="0dp"
             android:padding="3dp"
             app:cardElevation="0dp"
@@ -34,6 +34,7 @@
             android:id="@+id/tvIconName"
             android:layout_marginTop="6dp"
             android:gravity="center"
+            android:layout_gravity="center"
             android:textColor="#6C7989"
             android:textSize="12sp"
             android:fontFamily="@font/inter_medium"

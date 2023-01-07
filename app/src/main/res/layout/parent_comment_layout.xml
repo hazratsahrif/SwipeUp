@@ -3,7 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_marginVertical="8dp"
+    android:layout_marginVertical="4dp"
+    android:layout_marginLeft="60dp"
+    android:layout_marginRight="10dp"
     android:layout_height="wrap_content">
     <RelativeLayout
         android:layout_width="match_parent"
@@ -23,14 +25,15 @@
                 app:cardCornerRadius="100dp"
                 android:id="@+id/cvBorder"
                 app:cardElevation="0dp"
+                android:layout_marginTop="2dp"
                 app:strokeColor="#FF5B71"
                 app:strokeWidth="2.3dp">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
                     android:scaleType="centerCrop"
-                    android:padding="2dp"
                     android:id="@+id/imAvatar"
                     android:src="@drawable/regular" />
             </com.google.android.material.card.MaterialCardView>
@@ -64,7 +67,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="12dp"
-                        android:text="2w"
+                        android:text="1d"
                         android:id="@+id/tvDay"
                         android:textColor="#6C7989"
                         android:textSize="13sp" />
@@ -73,7 +76,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="In integer suspendisse ridiculus vulputate tortor egestas 😍"
+                        android:text="It’s a sectet :) "
                         android:textColor="#2B323B"
                         android:id="@+id/tvMessage"
                         android:textSize="14sp" />
@@ -86,6 +89,7 @@
             android:id="@+id/layoutLike"
             android:layout_alignParentRight="true"
             android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
             android:orientation="vertical">
             <ImageView
                 android:layout_width="18dp"
@@ -97,12 +101,53 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1024"
+                android:text="32"
+                android:layout_marginTop="2dp"
                 android:textColor="#A4ADB7"
                 android:textSize="12sp" />
 
         </LinearLayout>
 
     </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/expanded_layout"
+        android:layout_marginTop="12dp"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/childRecyclerView"
+            />
+
+    </RelativeLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+
+        android:layout_marginTop="12dp"
+        android:id="@+id/expandLayout"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/chevron_down"
+            android:text="View all replies (18)"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textSize="13sp"
+            android:drawablePadding="4dp"
+            android:textColor="#6C7989"
+            android:id="@+id/tvView"
+            android:fontFamily="@font/inter_medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
 
 </LinearLayout>

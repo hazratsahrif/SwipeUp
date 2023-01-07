@@ -38,10 +38,10 @@ public class ReportAdpater extends RecyclerView.Adapter<ReportAdpater.MyViewHold
 
         holder.reportLayoutBinding.tvTitle.setText(list.get(i));
         if (i==0){
-            holder.reportLayoutBinding.tvSubTitle.setVisibility(View.VISIBLE);
+            holder.reportLayoutBinding.tvTitle2.setVisibility(View.VISIBLE);
         }
         else {
-            holder.reportLayoutBinding.tvSubTitle.setVisibility(View.GONE);
+            holder.reportLayoutBinding.tvTitle2.setVisibility(View.GONE);
         }
 
     }

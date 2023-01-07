@@ -91,10 +91,10 @@ public class ShareBottomSheet extends BottomSheetDialogFragment implements onCli
         itemClasses.add(new ProfileClass("Annette Black",R.drawable.regular));
         itemClasses.add(new ProfileClass("Annette Black",R.drawable.regular_5));
 
-        socialItem.add(new SocialModel(ContextCompat.getColor(getContext(),R.color.red),R.drawable.union,"Share link"));
+        socialItem.add(new SocialModel(ContextCompat.getColor(getContext(),R.color.red),R.drawable.union,"Copy link"));
         socialItem.add(new SocialModel(ContextCompat.getColor(getContext(),R.color.color_telegram),R.drawable.frame,"Telegram "));
-        socialItem.add(new SocialModel(ContextCompat.getColor(getContext(),R.color.fb_color),R.drawable.fb,"Viber"));
-        socialItem.add(new SocialModel(ContextCompat.getColor(getContext(),R.color.color_viber),R.drawable.viber,"Facebook"));
+        socialItem.add(new SocialModel(ContextCompat.getColor(getContext(),R.color.color_viber),R.drawable.viber,"Viber"));
+        socialItem.add(new SocialModel(ContextCompat.getColor(getContext(),R.color.fb_color),R.drawable.fb,"Facebook"));
         socialItem.add(new SocialModel(ContextCompat.getColor(getContext(),R.color.sms_color),R.drawable.sms,"Sms"));
         socialItem.add(new SocialModel(ContextCompat.getColor(getContext(),R.color.twitter_color),R.drawable.twitter_2,"Twitter"));
 
