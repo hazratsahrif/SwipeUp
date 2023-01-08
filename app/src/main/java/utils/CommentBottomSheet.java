@@ -41,9 +41,6 @@ public class CommentBottomSheet extends BottomSheetDialogFragment implements Com
     List<BottomCommentDataModel> list;
     List<String> emojiList;
     CommentAdapter adapter;
-
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -86,9 +83,7 @@ public class CommentBottomSheet extends BottomSheetDialogFragment implements Com
 //        childList.add(new CommentDataModel("travelguru","2d","It’s a sectet :)",R.drawable.kris,true));
 //        childList.add(new CommentDataModel("travelguru","2d","It’s a sectet :)",R.drawable.ann,false));
         list.add(new BottomCommentDataModel(childList,"travelguru","1w","In integer suspendisse ridiculus vulputate  tortor egestas",R.drawable.regular,true));
-
         list.add(new BottomCommentDataModel(childList,"travelguru","1w","In integer suspendisse ridiculus vulputate  tortor egestas",R.drawable.james,false));
-
         adapter = new CommentAdapter(list,getContext(),this::onPress);
         binding.rv.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL,false));
         binding.rv.setHasFixedSize(true);

@@ -60,6 +60,8 @@
                 android:focusedByDefault="true"
                 android:focusableInTouchMode="true"
                 android:focusable="true"
+                android:imeOptions="actionDone"
+                android:inputType="text"
                 android:textSize="13sp"
                 android:textCursorDrawable="@drawable/curser"
                 android:paddingVertical="12dp"

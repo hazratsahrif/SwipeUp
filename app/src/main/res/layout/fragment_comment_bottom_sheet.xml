@@ -95,30 +95,61 @@ tools:context="utils.CommentBottomSheet"
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <com.google.android.material.textfield.TextInputLayout
-                        style="@style/ThemeOverlay.Material3.TextInputEditText.FilledBox"
                         android:layout_width="match_parent"
-                        android:id="@+id/etMessage"
-                        android:layout_height="wrap_content"
+                        android:id="@+id/edInput"
                         android:layout_toStartOf="@id/btnAt"
-                        android:hint="Message..."
-                        android:textColor="#6C7989"
-                        android:textSize="14sp"
-                        app:boxBackgroundColor="@color/white"
-                        app:boxCornerRadiusBottomEnd="100dp"
-                        app:boxCornerRadiusBottomStart="100dp"
-                        app:boxCornerRadiusTopEnd="100dp"
-                        app:boxCornerRadiusTopStart="100dp"
+                        android:layout_height="wrap_content"
+                        app:boxBackgroundColor="#ffffff"
+                        android:hint="Search anything..."
+                        android:textSize="13sp"
+                        app:hintEnabled="false"
+                        app:boxStrokeWidth="0dp"
+                        app:hintTextColor="@color/black"
                         app:endIconDrawable="@drawable/smile"
                         app:endIconMode="custom"
-                        app:boxStrokeWidth="0dp"
-                        app:boxStrokeWidthFocused="0dp">
+                        app:boxStrokeWidthFocused="0dp"
+                        android:textColor="#ffffff">
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:hint="Message..."
+                            android:background="@null"
+                            android:id="@+id/editText"
+                            android:imeOptions="actionDone"
+                            android:inputType="text"
+                            android:textSize="13sp"
+                            android:drawablePadding="8dp"
 
-                            android:background="@null" />
+                            android:textCursorDrawable="@drawable/curser"
+                            android:paddingVertical="11dp"
+                            android:layout_height="wrap_content"
+                            />
                     </com.google.android.material.textfield.TextInputLayout>
+<!--                    <com.google.android.material.textfield.TextInputLayout-->
+<!--                        style="@style/ThemeOverlay.Material3.TextInputEditText.FilledBox"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:id="@+id/etMessage"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_toStartOf="@id/btnAt"-->
+<!--                        android:hint="Message..."-->
+<!--                        android:textColor="#6C7989"-->
+<!--                        android:textSize="14sp"-->
+<!--                        app:boxBackgroundColor="@color/white"-->
+<!--                        app:boxCornerRadiusBottomEnd="100dp"-->
+<!--                        app:boxCornerRadiusBottomStart="100dp"-->
+<!--                        app:boxCornerRadiusTopEnd="100dp"-->
+<!--                        app:boxCornerRadiusTopStart="100dp"-->
+<!--                        app:endIconDrawable="@drawable/smile"-->
+<!--                        app:endIconMode="custom"-->
+<!--                        app:boxStrokeWidth="0dp"-->
+<!--                        app:boxStrokeWidthFocused="0dp">-->
+<!--                        <com.google.android.material.textfield.TextInputEditText-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+
+<!--                            android:background="@null" />-->
+<!--                    </com.google.android.material.textfield.TextInputLayout>-->
                     <ImageButton
                         android:layout_width="wrap_content"
                         android:src="@drawable/at_sign"
