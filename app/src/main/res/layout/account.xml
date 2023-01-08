@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="128dp"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:paddingBottom="8dp"
@@ -88,13 +88,14 @@
             android:textSize="12sp"/>
         <com.google.android.material.button.MaterialButton
             android:layout_width="match_parent"
-            android:layout_height="32dp"
+            android:layout_height="wrap_content"
             android:layout_marginHorizontal="18dp"
             android:minHeight="0dp"
             android:minWidth="0dp"
             android:elevation="0dp"
             android:insetTop="0dp"
             android:insetBottom="0dp"
+            android:padding="8dp"
             android:id="@+id/btnFollow"
             app:elevation="0dp"
             android:text="Follow"

@@ -328,11 +328,12 @@
                        android:backgroundTint="@android:color/transparent"
                        android:drawablePadding="7dp"
                        android:textColor="@color/white"
+                       android:maxLines="1"
                        android:layout_height="wrap_content"
                        android:textSize="12sp"
-                       android:clipToOutline="true"
                        android:text="999k"
                        android:focusable="true"
+                       android:ellipsize="marquee"
                        android:focusableInTouchMode="true"
                        />
 
@@ -390,6 +391,8 @@
                          android:backgroundTint="@android:color/transparent"
                          android:drawablePadding="7dp"
                          android:textColor="@color/white"
+                         android:ellipsize="marquee"
+                         android:maxLines="1"
                          android:layout_height="wrap_content"
                          android:textSize="12sp"
                          android:clipToOutline="true"
