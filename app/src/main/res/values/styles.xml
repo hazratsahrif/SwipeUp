@@ -27,4 +27,12 @@
         <item name="selectableItemBackground">@color/red</item>
     </style>
 
+    <style name="LoginTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@color/hint_color</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="colorAccent">#D8CACA</item>
+
+    </style>
+
+
 </resources>

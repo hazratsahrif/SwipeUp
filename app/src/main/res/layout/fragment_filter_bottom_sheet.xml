@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navy_blue"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="utils.FilterBottomSheet">
+
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/normalContinuousSlider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:trackHeight="2dp"
+        android:valueFrom="0.0"
+        android:value="10"
+        app:haloColor="@color/red"
+        app:thumbColor="@color/white"
+        app:trackColorInactive="#29FFFFFF"
+        app:trackColorActive="@color/red"
+        android:backgroundTint="@color/red"
+        android:valueTo="100.0"
+        />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:backgroundTint="@android:color/transparent"
+        android:paddingVertical="0.5dp"
+        android:scrollbars="none"
+        android:fillViewport="true"
+        app:tabMode="scrollable"
+        android:isScrollContainer="true"
+        app:tabSelectedTextColor="@color/white"
+        app:tabIndicatorFullWidth="false"
+        app:tabGravity="center"
+        android:layout_gravity="center"
+        app:tabTextColor="#6C7989"
+        app:tabIndicator="@drawable/tab"
+        app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+        app:tabIndicatorColor="@color/white"
+        android:layout_height="42dp" >
+
+
+    </com.google.android.material.tabs.TabLayout>
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewPager"
+        />
+
+
+</LinearLayout>
