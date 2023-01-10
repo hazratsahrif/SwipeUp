@@ -12,10 +12,13 @@ import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
+import androidx.navigation.NavDestination;
 import androidx.navigation.Navigation;
 import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.myapplication.R;
+
 import com.example.myapplication.databinding.FragmentLiveBinding;
 import com.github.dhaval2404.imagepicker.ImagePicker;
 
@@ -32,10 +35,24 @@ public class LiveFragment extends Fragment {
                 NavHostFragment.findNavController(LiveFragment.this).navigateUp();
             }
         });
+        binding.btnFilter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(LiveFragment.this).navigate(R.id.action_swipeLiveFragment_to_filterBottomSheet);
+            }
+        });
         binding.btnGolive.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Navigation.findNavController(view).navigate(R.id.action_liveFragment_to_goLiveFragment);
+
+                NavHostFragment.findNavController(LiveFragment.this).navigate(R.id.action_swipeLiveFragment_to_goLiveFragment);
+            }
+        });
+        binding.btnShare.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                NavHostFragment.findNavController(LiveFragment.this).navigate(R.id.action_swipeLiveFragment_to_liveShareBottomSheet);
             }
         });
         binding.btnSelectImage.setOnClickListener(new View.OnClickListener() {

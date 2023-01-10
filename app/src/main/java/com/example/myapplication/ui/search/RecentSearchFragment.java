@@ -30,10 +30,6 @@ public class RecentSearchFragment extends Fragment {
         binding = FragmentRecentSearchBinding.inflate(inflater,container,false);
         list = new ArrayList<>();
 
-
-
-
-
         list.add("memes");
         list.add("businessideas");
         list.add("fashionstyle");

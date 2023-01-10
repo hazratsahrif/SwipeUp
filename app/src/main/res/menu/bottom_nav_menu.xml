@@ -15,7 +15,6 @@
 
     <item
         android:id="@+id/placeholder1"
-        android:actionLayout="@layout/padding"
         android:title="add" />
 
     <item

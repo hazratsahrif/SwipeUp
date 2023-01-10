@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context=".ui.live.SwipeLiveFragment">
+
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:id="@+id/viewFlipper"
+        android:layout_height="wrap_content">
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/firstLayout"
+            android:labelFor="@id/firstLayout"
+            android:name="com.example.myapplication.ui.live.LiveFragment"
+
+            />
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/secondLayout"
+            android:labelFor="@id/secondLayout"
+            android:name="com.example.myapplication.ui.live.LiveStoryFragment"
+
+            />
+
+
+
+    </ViewFlipper>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="8dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Live"
+            android:id="@+id/tvLive"
+            android:textSize="15sp"
+            android:textColor="@color/white"/>
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="12dp"
+
+            app:tint="#52FFFFFF" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Story"
+            android:id="@+id/tvStory"
+            android:textColor="@color/white56"
+            android:textSize="15sp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:elevation="0dp"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:backgroundTint="#D9535151"
+    android:backgroundTint="#CE535151"
     android:fadingEdge="vertical|horizontal"
     android:requiresFadingEdge="horizontal|vertical"
     android:layout_marginHorizontal="16dp"
@@ -18,7 +18,7 @@
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:elevation="0dp"
-        android:backgroundTint="#1BFFFFFF"
+        android:backgroundTint="#0FFFFFFF"
         app:cardElevation="0dp"
         app:cardCornerRadius="100dp"
 
@@ -42,7 +42,7 @@
             />
         <TextView
             android:textSize="14sp"
-            android:fontFamily="@font/inter_medium"
+            android:fontFamily="@font/inter_regular"
             android:layout_width="wrap_content"
             android:id="@+id/tvComment"
             android:layout_toRightOf="@id/tvName"

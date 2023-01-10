@@ -1,4 +1,4 @@
-package com.example.myapplication.ui.sginin;
+package com.example.myapplication.ui.signin;
 
 import android.os.Bundle;
 

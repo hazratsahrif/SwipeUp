@@ -23,5 +23,6 @@
     <color name="navy_blue">#0E141B</color>
     <color name="hint_color">#A4ADB7</color>
     <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">#E8EAED</color>
+    <color name="white56">#8FFFFFFF</color>
 
 </resources>

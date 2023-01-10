@@ -53,7 +53,6 @@ public class LiveShareBottomSheet extends BottomSheetDialogFragment {
     @Override
     public void onStart() {
         super.onStart();
-        Toast.makeText(getContext(), "start", Toast.LENGTH_SHORT).show();
         getDialog().getWindow().clearFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND);
     }
 

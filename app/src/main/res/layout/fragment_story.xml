@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/story_back"
+    android:orientation="vertical"
+    tools:context=".ui.live.StoryFragment">
+
+        <jp.shts.android.storiesprogressview.StoriesProgressView
+            android:id="@+id/stories"
+            android:layout_marginHorizontal="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_gravity="top"
+            android:layout_marginTop="8dp" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+
+        android:layout_marginHorizontal="12dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="32dp"
+            android:layout_gravity="center_vertical"
+            app:cardCornerRadius="100dp"
+            android:layout_height="32dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:id="@+id/ivImage"
+                android:layout_gravity="center"
+                android:src="@drawable/regular1"
+                />
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="petlover"
+            android:textSize="16sp"
+
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/inter_medium"
+            android:textColor="@color/white"
+            android:layout_marginLeft="12dp"
+            />
+        <androidx.cardview.widget.CardView
+            android:layout_width="18dp"
+
+            app:cardCornerRadius="100dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="7dp"
+            app:cardBackgroundColor="@color/blue"
+            android:layout_gravity="center_vertical"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/checkk"
+                />
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4h"
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/inter_medium"
+            android:textColor="#8FFFFFFF"
+            android:layout_marginLeft="6dp"
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            app:cardBackgroundColor="#29FFFFFF"
+            android:layout_gravity="center_vertical"
+            android:elevation="0dp"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="6dp"
+            android:layout_height="wrap_content">
+          <ImageButton
+              android:background="?attr/selectableItemBackgroundBorderless"
+              android:layout_width="match_parent"
+              android:layout_margin="8dp"
+              android:layout_gravity="center"
+              android:id="@+id/btnClose"
+              android:layout_height="match_parent"
+              android:src="@drawable/cross"
+              app:tint="@color/white"
+              />
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/rv"
+        android:layout_height="wrap_content"
+        android:clipToPadding="true"
+        tools:listitem="@layout/story_footer_layout"
+
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="9dp"
+
+
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/footer"
+        android:layout_below="@id/rv"
+
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:background="#4DFFFFFF"
+        android:layout_height="1dp"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:backgroundTint="#0E141B"
+        android:enabled="true"
+        android:focusedByDefault="true"
+        android:id="@+id/inputEditText"
+        app:hintEnabled="false"
+        app:boxStrokeWidth="0dp"
+        app:hintTextColor="@color/black"
+        android:focusableInTouchMode="true"
+        app:boxStrokeWidthFocused="0dp"
+
+        android:focusable="true"
+        android:layout_height="wrap_content">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:backgroundTint="#EB0E141B"
+            android:id="@+id/etMessage"
+            android:enabled="true"
+            android:hint="Message..."
+            android:focusedByDefault="true"
+            android:drawableEnd="@drawable/sticker"
+            android:lines="1"
+            android:scrollHorizontally="true"
+            android:ellipsize="end"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:textCursorDrawable="@drawable/curser"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:textColorHint="@color/white56"
+            android:paddingVertical="15dp"
+            android:maxLines="1"
+            android:inputType="text"
+            android:imeOptions="actionDone"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:fontFamily="@font/inter_regular"
+            android:background="@null"
+            android:layout_height="64dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:background="#4DFFFFFF"
+        android:layout_height="1dp"/>
+    </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

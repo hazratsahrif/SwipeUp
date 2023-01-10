@@ -46,7 +46,6 @@ public class PortraitAdapter extends RecyclerView.Adapter<PortraitAdapter.ViewHo
         holder.binding.tvTitle.setText(item.getTvTitle());
         if (rowIndex==position){
             holder.binding.cvBorder.setStrokeColor(ContextCompat.getColor(context, R.color.red));
-
         }
         else {
             holder.binding.cvBorder.setStrokeColor(Color.TRANSPARENT);

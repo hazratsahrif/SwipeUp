@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/signInFragment">
+    app:startDestination="@+id/navigation_home">
 
     <fragment
         android:id="@+id/navigation_home"
@@ -130,6 +130,7 @@
             app:destination="@id/goLiveFragment" />
 
 
+
     </fragment>
     <fragment
         android:id="@+id/goLiveFragment"
@@ -142,6 +143,9 @@
         <action
             android:id="@+id/action_goLiveFragment_to_filterBottomSheet"
             app:destination="@id/filterBottomSheet" />
+        <action
+            android:id="@+id/action_goLiveFragment_to_storyFragment"
+            app:destination="@id/storyFragment" />
     </fragment>
     <dialog
         android:id="@+id/liveShareBottomSheet"
@@ -160,12 +164,46 @@
         tools:layout="@layout/fragment_filter_bottom_sheet" />
     <fragment
         android:id="@+id/signInFragment"
-        android:name="com.example.myapplication.ui.sginin.SignInFragment"
+        android:name="com.example.myapplication.ui.signin.SignInFragment"
         android:label="fragment_sign_in"
         tools:layout="@layout/fragment_sign_in" >
         <action
             android:id="@+id/action_signInFragment_to_navigation_home"
             app:destination="@id/navigation_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/storyFragment"
+        android:name="com.example.myapplication.ui.live.StoryFragment"
+        android:label="fragment_story"
+        tools:layout="@layout/fragment_story" >
+        <action
+            android:id="@+id/action_storyFragment_to_liveShareBottomSheet"
+            app:destination="@id/liveShareBottomSheet" />
+        <action
+            android:id="@+id/action_storyFragment_to_gifBottomSheet"
+            app:destination="@id/gifBottomSheet" />
+    </fragment>
+    <dialog
+        android:id="@+id/gifBottomSheet"
+        android:name="utils.GifBottomSheet"
+        android:label="fragment_gif_bottom_sheet"
+        tools:layout="@layout/fragment_gif_bottom_sheet" >
+
+    </dialog>
+    <fragment
+        android:id="@+id/swipeLiveFragment"
+        android:name="com.example.myapplication.ui.live.SwipeLiveFragment"
+        android:label="fragment_swipe_live"
+        tools:layout="@layout/fragment_swipe_live" >
+        <action
+            android:id="@+id/action_swipeLiveFragment_to_filterBottomSheet"
+            app:destination="@id/filterBottomSheet" />
+        <action
+            android:id="@+id/action_swipeLiveFragment_to_goLiveFragment"
+            app:destination="@id/goLiveFragment" />
+        <action
+            android:id="@+id/action_swipeLiveFragment_to_liveShareBottomSheet"
+            app:destination="@id/liveShareBottomSheet" />
     </fragment>
 
 

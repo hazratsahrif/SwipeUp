@@ -36,6 +36,12 @@ public class GoLiveFragment extends Fragment {
                 NavHostFragment.findNavController(GoLiveFragment.this).navigate(R.id.action_goLiveFragment_to_filterBottomSheet);
             }
         });
+        binding.btnStoplive.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(GoLiveFragment.this).navigateUp();
+            }
+        });
         item= new ArrayList<>();
         item.add(new LiveMessageItem("snoopplow: ","So beautiful!"));
         item.add(new LiveMessageItem("snoopplow: ","So beautiful!"));
@@ -48,6 +54,13 @@ public class GoLiveFragment extends Fragment {
         binding.recyclerView.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL,false));
         binding.recyclerView.setHasFixedSize(true);
         binding.recyclerView.setAdapter(adapter);
+
+        binding.ivImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(GoLiveFragment.this).navigate(R.id.action_goLiveFragment_to_storyFragment);
+            }
+        });
         return binding.getRoot();
     }
 }

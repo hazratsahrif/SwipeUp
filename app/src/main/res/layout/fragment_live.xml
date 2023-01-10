@@ -132,7 +132,7 @@
         android:layout_height="52dp"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="72dp"
         >
         <com.google.android.material.card.MaterialCardView
             android:layout_width="48dp"
@@ -149,6 +149,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:id="@+id/btnFilter"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:src="@drawable/color_filter" />
 
@@ -203,45 +204,46 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:id="@+id/btnShare"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:src="@drawable/share" />
 
         </com.google.android.material.card.MaterialCardView>
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingVertical="8dp"
-        android:layout_marginBottom="16dp"
-        android:gravity="center"
-        android:layout_gravity="center_vertical"
-        >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Live"
-            android:textSize="15sp"
-            android:textColor="@color/white"/>
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:paddingVertical="8dp"-->
+<!--        android:layout_marginBottom="16dp"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_gravity="center_vertical"-->
+<!--        >-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Live"-->
+<!--            android:textSize="15sp"-->
+<!--            android:textColor="@color/white"/>-->
 
 
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/line"
-            android:layout_gravity="center_vertical"
-            android:layout_marginHorizontal="12dp"
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/line"-->
+<!--            android:layout_gravity="center_vertical"-->
+<!--            android:layout_marginHorizontal="12dp"-->
 
-            app:tint="#52FFFFFF" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Story"
-            android:textColor="#8FFFFFFF"
-            android:textSize="15sp"
-            />
-    </LinearLayout>
+<!--            app:tint="#52FFFFFF" />-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Story"-->
+<!--            android:textColor="#8FFFFFFF"-->
+<!--            android:textSize="15sp"-->
+<!--            />-->
+<!--    </LinearLayout>-->
 
 </LinearLayout>
