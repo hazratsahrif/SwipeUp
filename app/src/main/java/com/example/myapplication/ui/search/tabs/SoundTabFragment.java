@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.fragment.NavHostFragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.example.myapplication.R;
@@ -14,10 +15,10 @@ import com.example.myapplication.models.SoundModel;
 
 import java.util.ArrayList;
 
-import adapter.SoundAdapter;
+import com.example.myapplication.adapter.SoundAdapter;
 
 
-public class SoundTabFragment extends Fragment {
+public class SoundTabFragment extends Fragment implements SoundAdapter.OnClickListener {
     FragmentSoundTabBinding binding;
     ArrayList<SoundModel> slist;
     SoundAdapter soundAdapter;
@@ -39,13 +40,19 @@ public class SoundTabFragment extends Fragment {
         slist.add(new SoundModel(R.drawable.playback, "Travel Time", "Vivamus Lectus"));
 
 
-        soundAdapter = new SoundAdapter(slist,  getContext() );
+        soundAdapter = new SoundAdapter(slist,  getContext(),this );
         binding.rvStab.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL,false));
         binding.rvStab.setHasFixedSize(true);
         binding.rvStab.setAdapter(soundAdapter);
 
 
         return binding.getRoot();
+
+    }
+
+    @Override
+    public void onClick(boolean isClick) {
+        NavHostFragment.findNavController(SoundTabFragment.this).navigate(R.id.action_searchItemFragment_to_musicTabResult);
 
     }
 }

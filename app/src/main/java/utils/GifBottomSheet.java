@@ -2,7 +2,6 @@ package utils;
 
 import android.os.Bundle;
 
-import androidx.fragment.app.Fragment;
 import androidx.viewpager2.widget.ViewPager2;
 
 import android.view.LayoutInflater;
@@ -11,13 +10,10 @@ import android.view.ViewGroup;
 
 import com.example.myapplication.R;
 import com.example.myapplication.databinding.FragmentGifBottomSheetBinding;
-import com.example.myapplication.ui.search.SearchViewPagerAdapter;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 import com.google.android.material.tabs.TabLayout;
 
-import java.util.List;
-
-import adapter.GifPagerAdapter;
+import com.example.myapplication.adapter.GifPagerAdapter;
 
 
 public class GifBottomSheet extends BottomSheetDialogFragment {

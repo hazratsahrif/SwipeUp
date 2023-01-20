@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
-import androidx.navigation.fragment.NavHostFragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
@@ -20,11 +19,11 @@ import com.example.myapplication.models.TrendingTravelModel;
 import java.util.ArrayList;
 
 
-import adapter.AccountAdapter;
-import adapter.HashtagAdpater;
-import adapter.SoundAdapter;
-import adapter.TopVideosAdapter;
-import adapter.TrendingTravelAdapter;
+import com.example.myapplication.adapter.AccountAdapter;
+import com.example.myapplication.adapter.HashtagAdpater;
+import com.example.myapplication.adapter.SoundAdapter;
+import com.example.myapplication.adapter.TopVideosAdapter;
+import com.example.myapplication.adapter.TrendingTravelAdapter;
 import utils.GridSpacingItemDecoration;
 
 
@@ -57,7 +56,7 @@ public class TopFragmentTab extends Fragment {
 
         init();
 
-        adpater = new HashtagAdpater(list);
+        adpater = new HashtagAdpater(getContext(),list,null);
         binding.rvHashtags.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL,false));
         binding.rvHashtags.setHasFixedSize(true);
         binding.rvHashtags.setAdapter(adpater);
@@ -79,7 +78,7 @@ public class TopFragmentTab extends Fragment {
         binding.rvAccount.setAdapter(accountAdapter);
 
 
-        soundAdapter = new SoundAdapter(slist,getContext());
+        soundAdapter = new SoundAdapter(slist,getContext(),null);
         binding.rvSound.setLayoutManager(new LinearLayoutManager(getContext(),LinearLayoutManager. VERTICAL,false));
         binding.rvSound.setHasFixedSize(true);
         binding.rvSound.setAdapter(soundAdapter);

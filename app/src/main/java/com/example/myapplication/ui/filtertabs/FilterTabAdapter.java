@@ -6,12 +6,6 @@ import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.Lifecycle;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
-import com.example.myapplication.ui.search.tabs.HashTabFragment;
-import com.example.myapplication.ui.search.tabs.SoundTabFragment;
-import com.example.myapplication.ui.search.tabs.TopFragmentTab;
-import com.example.myapplication.ui.search.tabs.UserTabFragment;
-import com.example.myapplication.ui.search.tabs.VideoTabFragment;
-
 public class FilterTabAdapter extends FragmentStateAdapter {
     public FilterTabAdapter(@NonNull FragmentManager fm, Lifecycle lifecycle) {
         super(fm,lifecycle);

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.signup.tabs.PhoneTab">
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="0dp"
+        android:id="@+id/cvBorder"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="20dp"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/base100"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IN+91"
+                android:paddingVertical="14dp"
+                android:id="@+id/tvPrefix"
+                android:textSize="15sp"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="16dp"
+                android:textColor="@color/base900"
+                android:fontFamily="@font/inter_regular"
+
+                />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="1dp"
+                android:layout_toRightOf="@id/tvPrefix"
+                app:dividerColor="@color/base100"
+                android:id="@+id/divider"
+                android:layout_height="49dp"
+
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_toRightOf="@id/divider"
+                android:layout_marginRight="12dp"
+                app:hintEnabled="false"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeColor="@color/white"
+                android:background="@null"
+
+
+
+
+                android:backgroundTint="@android:color/transparent"
+                android:layout_height="wrap_content">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:hint="Phone number"
+
+                    android:textSize="15sp"
+                    android:textColorHint="@color/hint_color"
+                    android:id="@+id/editTextPassword"
+                    android:background="@null"
+                    android:maxLines="1"
+                    android:textCursorDrawable="@drawable/curser"
+
+                    android:scrollbars="none"
+                    android:scrollHorizontally="true"
+                    android:inputType="number"
+                    android:imeOptions="actionDone"
+
+                    android:textColor="@color/base900"
+
+
+                    android:paddingVertical="14dp"
+                    android:fontFamily="@font/inter_regular"
+                    android:backgroundTint="@android:color/transparent"
+                    android:layout_height="match_parent"
+
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvPassword"
+        android:text="@string/by_entering"
+        android:fontFamily="@font/inter_regular"
+        android:layout_marginTop="22dp"
+        android:layout_marginHorizontal="29dp"
+
+        android:lineHeight="21dp"
+        android:textSize="15sp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/already_have"
+        android:fontFamily="@font/inter_regular"
+        android:layout_marginTop="23dp"
+        android:id="@+id/tvSignIn"
+        android:layout_marginLeft="29dp"
+        android:textSize="15sp"
+
+        />
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cornerRadius="100dp"
+        android:id="@+id/btnSignUp"
+        android:letterSpacing="0"
+        app:elevation="0dp"
+        android:elevation="0dp"
+        android:stateListAnimator="@null"
+        android:backgroundTint="@color/hint_color"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="40dp"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:fontFamily="@font/inter_medium"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+
+
+        />
+
+</LinearLayout>

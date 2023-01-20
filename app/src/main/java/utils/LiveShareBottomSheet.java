@@ -3,15 +3,12 @@ package utils;
 import android.os.Bundle;
 
 import androidx.core.content.ContextCompat;
-import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.WindowManager;
-import android.widget.Toast;
 
 import com.example.myapplication.R;
 import com.example.myapplication.databinding.FragmentLiveShareBottomSheetBinding;
@@ -19,10 +16,9 @@ import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
 import java.util.ArrayList;
 
-import adapter.ActionAdapterClass;
-import adapter.ProfileAdapterClass;
-import adapter.SocialAdapterClass;
-import model.ActionModel;
+import com.example.myapplication.adapter.ProfileAdapterClass;
+import com.example.myapplication.adapter.SocialAdapterClass;
+
 import model.ProfileClass;
 import model.SocialModel;
 
@@ -53,7 +49,7 @@ public class LiveShareBottomSheet extends BottomSheetDialogFragment {
     @Override
     public void onStart() {
         super.onStart();
-        getDialog().getWindow().clearFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND);
+//        getDialog().getWindow().clearFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND);
     }
 
     private void setAdapter() {

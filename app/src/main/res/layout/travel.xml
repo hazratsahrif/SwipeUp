@@ -10,6 +10,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="127dp"
         app:cardCornerRadius="12dp"
+        app:cardBackgroundColor="@android:color/transparent"
         android:elevation="0dp"
         app:cardElevation="0dp"
         android:layout_gravity="center_vertical"
@@ -20,13 +21,13 @@
         android:layout_height="match_parent"
         android:src="@drawable/travel"
         android:id="@+id/ivtravel"
-        android:scaleType="fitXY"
+        android:scaleType="centerCrop"
         />
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_marginBottom="10dp"
-        android:layout_height="match_parent"
+        android:layout_height="30dp"
         android:layout_gravity="bottom"
+        android:background="@drawable/overay"
         android:orientation="vertical"
         >
         <TextView
@@ -34,6 +35,7 @@
             android:layout_height="wrap_content"
             android:drawableStart="@drawable/play___small"
             android:drawablePadding="6dp"
+            android:layout_marginBottom="10dp"
             android:text="215.8K"
             android:layout_marginHorizontal="12dp"
             android:layout_alignParentBottom="true"

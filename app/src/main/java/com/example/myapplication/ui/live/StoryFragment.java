@@ -22,7 +22,7 @@ import com.example.myapplication.databinding.FragmentStoryBinding;
 import java.util.ArrayList;
 import java.util.List;
 
-import adapter.StoryFooterAdapter;
+import com.example.myapplication.adapter.StoryFooterAdapter;
 import jp.shts.android.storiesprogressview.StoriesProgressView;
 
 public class StoryFragment extends Fragment implements StoriesProgressView.StoriesListener, StoryFooterAdapter.OnMessageButtonClick{

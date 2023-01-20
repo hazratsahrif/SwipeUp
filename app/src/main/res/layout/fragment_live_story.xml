@@ -245,17 +245,19 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="46dp"
+        android:layout_marginBottom="60dp"
         android:gravity="center"
         android:orientation="horizontal">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+
             android:orientation="vertical">
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="56dp"
+                android:layout_marginTop="16dp"
                 android:layout_height="56dp"
                 android:elevation="0dp"
                 app:cardBackgroundColor="#29FFFFFF"
@@ -282,9 +284,11 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="6dp"
+                android:gravity="center_horizontal"
                 android:text="Effects"
+                android:fontFamily="@font/inter_medium"
                 android:textColor="@color/white"
                 android:textSize="12sp" />
         </LinearLayout>
@@ -318,6 +322,7 @@
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="56dp"
+                android:layout_marginTop="16dp"
                 android:layout_height="56dp"
                 android:elevation="0dp"
                 app:cardBackgroundColor="#29FFFFFF"
@@ -344,9 +349,11 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="6dp"
                 android:text="Upload"
+                android:fontFamily="@font/inter_medium"
                 android:textColor="@color/white"
                 android:textSize="12sp" />
         </LinearLayout>

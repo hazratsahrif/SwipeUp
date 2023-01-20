@@ -9,13 +9,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.myapplication.R;
 import com.example.myapplication.databinding.FragmentRecentSearchBinding;
 
 import java.util.ArrayList;
-import java.util.List;
 
-import adapter.RecentAdapter;
+import com.example.myapplication.adapter.RecentAdapter;
 
 
 public class RecentSearchFragment extends Fragment {

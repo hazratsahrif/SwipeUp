@@ -4,6 +4,7 @@ import android.os.Bundle;
 
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 import androidx.navigation.fragment.NavHostFragment;
 
 import android.text.Editable;
@@ -31,10 +32,22 @@ public class SignInFragment extends Fragment {
         // Inflate the layout for this fragment
         binding = FragmentSignInBinding.inflate(inflater,container,false);
         binding.editTextPassword.setTransformationMethod(new PasswordTransformationMethod());
+        binding.btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).navigateUp();
+            }
+        });
         binding.editTextPassword.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
                 return false;
+            }
+        });
+        binding.tvSignUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(SignInFragment.this).navigate(R.id.action_signInFragment_to_signUpFragment);
             }
         });
         binding.editText.addTextChangedListener(new TextWatcher() {
@@ -96,6 +109,12 @@ public class SignInFragment extends Fragment {
                     NavHostFragment.findNavController(SignInFragment.this).navigate(R.id.action_signInFragment_to_navigation_home);
 
                 }
+            }
+        });
+        binding.btnResetNow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(SignInFragment.this).navigate(R.id.action_signInFragment_to_forgotPasswordFragment);
             }
         });
         return binding.getRoot();

@@ -15,7 +15,7 @@ import com.example.myapplication.databinding.FragmentRecentTabBinding;
 import java.util.ArrayList;
 import java.util.List;
 
-import adapter.GifAdapter;
+import com.example.myapplication.adapter.GifAdapter;
 
 
 public class RecentTab extends Fragment {

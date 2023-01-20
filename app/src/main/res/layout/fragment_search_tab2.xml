@@ -11,6 +11,7 @@ tools:context=".ui.search.SearchTabFragment">
     android:layout_height="wrap_content"
     android:backgroundTint="@color/white"
     android:theme="@style/Theme.Feardog.AppBarOverlay">
+
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabs"
         android:layout_width="match_parent"
@@ -29,11 +30,7 @@ tools:context=".ui.search.SearchTabFragment">
         app:tabIndicator="@drawable/tab"
         app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
         app:tabIndicatorColor="@color/red"
-        android:layout_height="42dp" >
-
-
-
-    </com.google.android.material.tabs.TabLayout>
+        android:layout_height="42dp" />
 
 
 </com.google.android.material.appbar.AppBarLayout>

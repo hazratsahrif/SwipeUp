@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ui.signup.SignUpFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/white"
+        android:id="@+id/appBar"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="24dp"
+            android:layout_marginVertical="12dp"
+            android:layout_marginRight="16dp"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_centerVertical="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/back"
+                android:id="@+id/btnBack"
+                android:layout_alignParentLeft="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:textSize="18sp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"
+                android:fontFamily="@font/inter_semibold"
+
+
+                />
+
+        </RelativeLayout>
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:paddingVertical="0.5dp"
+            android:scrollbars="none"
+            android:layout_marginTop="10dp"
+            android:fillViewport="true"
+            android:isScrollContainer="true"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/red"
+            app:tabIndicatorFullWidth="false"
+            app:tabGravity="center"
+            android:layout_gravity="center"
+
+            android:clipToPadding="true"
+
+            app:tabTextColor="#6C7989"
+            app:tabIndicator="@drawable/tab"
+            app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+            app:tabIndicatorColor="@color/red"
+            android:layout_height="42dp" >
+
+        </com.google.android.material.tabs.TabLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+<androidx.viewpager2.widget.ViewPager2
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/viewPager"
+    />
+</LinearLayout>

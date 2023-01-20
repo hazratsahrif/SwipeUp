@@ -36,9 +36,8 @@
     <LinearLayout
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="32dp"
         android:orientation="horizontal"
-        android:paddingVertical="8dp"
         android:layout_marginBottom="16dp"
         android:gravity="center"
         android:layout_gravity="center_vertical"
@@ -49,6 +48,7 @@
             android:text="Live"
             android:id="@+id/tvLive"
             android:textSize="15sp"
+            android:fontFamily="@font/inter_medium"
             android:textColor="@color/white"/>
 
 
@@ -57,6 +57,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/line"
+
             android:layout_gravity="center_vertical"
             android:layout_marginHorizontal="12dp"
 
@@ -66,6 +67,7 @@
             android:layout_height="wrap_content"
             android:text="Story"
             android:id="@+id/tvStory"
+            android:fontFamily="@font/inter_medium"
             android:textColor="@color/white56"
             android:textSize="15sp"
             />

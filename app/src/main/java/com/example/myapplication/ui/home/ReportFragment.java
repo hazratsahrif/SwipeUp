@@ -14,7 +14,7 @@ import com.example.myapplication.databinding.FragmentReposrtBinding;
 
 import java.util.ArrayList;
 
-import adapter.ReportAdpater;
+import com.example.myapplication.adapter.ReportAdpater;
 
 
 public class ReportFragment extends Fragment {

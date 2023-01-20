@@ -3,58 +3,77 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginVertical="15dp"
+    android:layout_marginHorizontal="16dp"
     android:orientation="vertical">
 
     <TextView
         android:id="@+id/tvDay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="12dp"
-        android:layout_marginBottom="12dp"
         android:fontFamily="@font/inter_medium"
         android:text="Yesterday"
         android:textSize="13sp"
-        android:visibility="gone" />
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone"
+        />
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         android:orientation="horizontal">
 
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
-            <ImageView
-                android:id="@+id/avatar1"
+            <androidx.cardview.widget.CardView
                 android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:layout_marginLeft="6dp"
-                android:src="@drawable/avatar" />
+                android:id="@+id/cv1"
+                app:cardCornerRadius="100dp"
+                android:elevation="0dp"
+                android:layout_marginLeft="8dp"
+                app:cardElevation="0dp"
+                android:layout_height="48dp">
+                <ImageView
+                    android:id="@+id/avatar2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
 
-            <ImageView
-                android:id="@+id/avatar2"
+                    android:src="@drawable/avatar_1"
+                    />
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
                 android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:layout_marginTop="17dp"
-                android:layout_marginRight="4dp"
-                android:src="@drawable/avatar_1"
-                android:visibility="gone" />
+                app:cardCornerRadius="100dp"
+                android:layout_marginTop="16dp"
+                android:elevation="0dp"
+                app:cardElevation="0dp"
+                android:layout_height="48dp">
+                <ImageView
+                    android:id="@+id/avatar1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/avatar" />
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_toEndOf="@id/avatar1"
+                android:layout_marginLeft="12dp"
+                android:layout_toEndOf="@id/cv1"
                 android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
-
                     android:orientation="horizontal">
 
                     <TextView
@@ -64,8 +83,8 @@
                         android:fontFamily="@font/inter_medium"
                         android:text="armholegetaway"
                         android:textColor="@color/light_black"
-                        android:textSize="13sp"
-                        android:visibility="gone" />
+                        android:textSize="14sp"
+                         />
 
                     <TextView
                         android:id="@+id/tvAnd"
@@ -73,8 +92,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
                         android:text="and"
-                        android:textSize="13sp"
-                        android:visibility="gone" />
+                        android:textSize="14sp"
+                         />
 
 
                 </LinearLayout>
@@ -86,7 +105,7 @@
                     android:fontFamily="@font/inter_medium"
                     android:text="mixtapenegative"
                     android:textColor="@color/light_black"
-                    android:textSize="13sp"
+                    android:textSize="14sp"
 
                     />
 
@@ -94,8 +113,9 @@
                     android:id="@+id/tvLikeVideo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
                     android:text="liked your video ・ 1h"
-                    android:textSize="12sp" />
+                    android:textSize="14sp" />
 
             </LinearLayout>
 
@@ -112,39 +132,12 @@
             android:layout_width="56dp"
             android:layout_height="80dp"
             android:src="@drawable/cover"
-
-            android:visibility="gone" />
-
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnAdd"
-            android:layout_width="wrap_content"
-
-
-            app:elevation="10dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.5"
-            android:padding="2dp"
-            android:outlineSpotShadowColor="@color/red"
-            android:outlineAmbientShadowColor="@color/red"
-            android:outlineProvider="background"
-            android:stateListAnimator="@navigation/mobile_navigation"
-            android:backgroundTint="@color/light_white"
-            android:elevation="5dp"
-            android:fontFamily="@font/inter_medium"
-            android:text="Friends"
-            android:textAllCaps="false"
-            android:textColor="@color/black"
-            android:textSize="12sp"
-            app:backgroundTint="@null"
-            app:cornerRadius="100dp"
-             />
-
-
-
+            android:visibility="visible" />
 
     </LinearLayout>
-
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp"/>
     <!--    <ViewFlipper-->
     <!--        android:layout_width="match_parent"-->
     <!--        android:layout_height="wrap_content">-->

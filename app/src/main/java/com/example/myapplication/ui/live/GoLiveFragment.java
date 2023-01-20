@@ -14,7 +14,7 @@ import com.example.myapplication.models.LiveMessageItem;
 import java.util.ArrayList;
 import java.util.List;
 
-import adapter.LiveMessageAdapter;
+import com.example.myapplication.adapter.LiveMessageAdapter;
 
 
 public class GoLiveFragment extends Fragment {

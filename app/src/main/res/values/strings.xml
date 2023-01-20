@@ -7,6 +7,50 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="following">Following</string>
     <string name="for_you">For You</string>
-    <string name="don_t_have">Don’t have an account yet? Go to <font color="#FF5B71"> Sign Up</font></string>
+    <string name="don_t_have">Don’t have an account yet? Go to<b><font color="#FF5B71"> Sign Up</font></b></string>
+    <string name="already_have">Already have an account? Go to <b><font color="#FF5B71"> Sign In</font></b></string>
     <string name="forgot_passwordt_reset_now">Forgot passwordt?<font color="#FF5B71"> Reset Now</font></string>
+    <string name="content">With the idea of imparting programming
+      knowledge, Mr. Sandeep Jain, an IIT Roorkee alumnus started a
+      dream, GeeksforGeeks. Whether programming excites you or you feel
+      stifled, wondering how to prepare for interview questions or how to
+      ace data structures and algorithms, GeeksforGeeks is a one-stop solution.
+      With every tick of time, we are adding arrows in our quiver. From articles
+      on various computer science subjects to programming problems for practice,
+      from basic to premium courses, from technologies to entrance examinations,
+      we have been building ample content with superior quality. In a short span,
+      we have built a community of 1 Million+ Geeks around the world, 20,000+
+      Contributors and 500+ Campus Ambassadors in various colleges across the nation.
+      Our success stories include a lot of students who benefitted in their placements
+      and landed jobs at tech giants. Our vision is to build a gigantic network of
+      geeks and we are only a fraction of it yet.
+  </string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="pointone">•  Elementum adipiscing nulla a justo diam enim, vitae mi proin. Pharetra a, enim laoreet suscipit viverra massa</string>
+    <string name="point2">• Varius volutpat dignissim in consectetur sed neque turpis vulputate. Adipiscing purus in dui fermentum interdum ut volutpat ac maecenas. Et ridiculus mi, viverra pellentesque ac. A erat sed egestas hendrerit ac.</string>
+    <string name="point3">2. Vitae id ligula feugiat non in nisi, tempus, tellus. Facilisis risus, id amet maecenas dui eget. Sagittis, viverra dictumst fames scelerisque volutpat arcu sit elementum consectetur.</string>
+    <string name="point4">3. Urna, quam risus et nibh magnis hendrerit auctor. Egestas vulputate arcu tincidunt lacus sit. Augue aliquet quisque orci, dolor posuere tellus maecenas amet.</string>
+    <string name="point5">4. Lacus id enim quis luctus vitae, volutpat. Nisl vulputate phasellus tortor sapien vulputate. Elementum ut enim porta elementum ut purus massa pulvinar mauris. Sed.</string>
+    <string name="point1">If you are a user having your usual residence in the US, this EULA shall apply.\n\n If you are a user having your usual residence in the EEA and Switzerland, this EULA shall apply.</string>
+    <string name="point7">Welcome to TikTok (the “Platform”), which is provided by TikTok Inc. in the United States (collectively such entities will be referred to as “TikTok”, “we” or “us”).\n\n You are reading the terms of service (the “Terms”), which govern the relationship and serve as an agreement between you and us and set forth the terms and conditions by which you may access and use the Platform and our related websites, services, applications, products and content (collectively, the “Services”).</string>
+    <string name="point8">Your access to and use of the Services is subject to these Terms and all applicable laws and regulations. You may not:</string>
+    <string name="point6">• access or use the Services if you are not fully able and legally competent to agree to these Terms or are authorized to use the Services by your parent or legal guardian;\n\n • distribute, license, transfer, or sell, in whole or in part, any of the Services or any derivative works thereof.</string>
+    <string name="point9">In addition to the above, your access to and use of the Services must, at all times, be compliant with our <b><font color="#FF5B71">Privacy Policy.</font></b> </string>
+    <string name="reset">Please enter the verification code we just sent to your email. Didn’t get it?<b><font color="#FF5B71"> Resend code</font></b></string>
+    <string name="make_sure">Make sure your new passwords are<b><font color="#000">at least eight characters long.</font></b> Strong password uses combination of uppercase and lowercase letters, symbols and numbers. But we don’t insist on it.</string>
+    <string name="by_entering">By entering your phone number you agree to our<b><font color="#FF5B71"> Terms of Use</font></b> and <b><font color="#FF5B71">Privacy Policy</font></b></string>
 </resources>

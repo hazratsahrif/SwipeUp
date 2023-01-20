@@ -76,7 +76,7 @@
             android:focusable="true"
             android:imeOptions="actionDone"
             android:inputType="text"
-            android:textSize="13sp"
+            android:textSize="15sp"
             android:textCursorDrawable="@drawable/curser"
             android:paddingVertical="14dp"
             android:layout_height="wrap_content"
@@ -116,7 +116,7 @@
             android:focusable="true"
             android:imeOptions="actionDone"
             android:inputType="text"
-            android:textSize="13sp"
+            android:textSize="15sp"
             android:textCursorDrawable="@drawable/curser"
             android:paddingVertical="14dp"
             android:layout_height="wrap_content"
@@ -127,7 +127,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/tvPassword"
+        android:id="@+id/tvSignUp"
         android:text="@string/don_t_have"
         android:fontFamily="@font/inter_regular"
         android:layout_marginTop="24dp"
@@ -142,6 +142,8 @@
         android:fontFamily="@font/inter_regular"
         android:layout_marginTop="12dp"
         android:layout_marginLeft="20dp"
+        android:id="@+id/btnResetNow"
+        android:background="?selectableItemBackground"
         android:textSize="15sp"
 
         />
@@ -151,6 +153,7 @@
         android:layout_height="wrap_content"
         app:cornerRadius="100dp"
         android:id="@+id/btnSignIn"
+        android:letterSpacing="0"
         android:backgroundTint="@color/hint_color"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="40dp"

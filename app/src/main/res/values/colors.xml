@@ -24,5 +24,14 @@
     <color name="hint_color">#A4ADB7</color>
     <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">#E8EAED</color>
     <color name="white56">#8FFFFFFF</color>
+    <color name="gray_base200">#C6CCD2</color>
+    <color name="base300">#A4ADB7</color>
+    <color name="base800">#2B323B</color>
+    <color name="base100">#E8EAED</color>
+    <color name="base500">#6C7989</color>
+    <color name="green">#0ABC3C</color>
+    <color name="white16">#29FFFFFF</color>
+    <color name="base900">#0E141B</color>
+    <color name="red700">#D30E28</color>
 
 </resources>

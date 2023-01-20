@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
+import androidx.navigation.fragment.NavHostFragment;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.example.myapplication.R;
@@ -20,7 +21,9 @@ public class ChatFragment extends Fragment {
             R.drawable.tab_chat_,
             R.drawable.tab_heart,
             R.drawable.tab_chat,
-            R.drawable.tab_user
+            R.drawable.tab_user,
+            R.drawable.at,
+            R.drawable.award,
     };
 
     @Override
@@ -38,6 +41,8 @@ public class ChatFragment extends Fragment {
         tabs.addTab(tabs.newTab().setText("Likes  "));
         tabs.addTab(tabs.newTab().setText("Comments  "));
         tabs.addTab(tabs.newTab().setText("Followers  "));
+        tabs.addTab(tabs.newTab().setText("Mentions  "));
+        tabs.addTab(tabs.newTab().setText("Swipe Up  "));
 //        tabs.setPadding(12,0,12,0);
 
         setupTabIcons();
@@ -64,6 +69,13 @@ public class ChatFragment extends Fragment {
                 tabs.selectTab(tabs.getTabAt(position));
             }
         });
+
+        binding.btnChat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(ChatFragment.this).navigate(R.id.action_chatFragment_to_chatHistoryFragment);
+            }
+        });
         return  binding.getRoot();
 
     }
@@ -72,6 +84,8 @@ public class ChatFragment extends Fragment {
         binding.tabs.getTabAt(1).setIcon(tabIcons[1]);
         binding.tabs.getTabAt(2).setIcon(tabIcons[2]);
         binding.tabs.getTabAt(3).setIcon(tabIcons[3]);
+        binding.tabs.getTabAt(4).setIcon(tabIcons[4]);
+        binding.tabs.getTabAt(5).setIcon(tabIcons[5]);
 
     }
 }

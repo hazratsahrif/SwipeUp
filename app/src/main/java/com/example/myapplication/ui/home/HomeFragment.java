@@ -13,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.Navigation;
+import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.myapplication.R;
 import com.example.myapplication.databinding.FragmentHomeBinding;
@@ -51,6 +52,14 @@ public class HomeFragment extends Fragment {
 //                Navigation.findNavController(view).navigate(R.id.action_navigation_home_to_commentBottomSheet);
 //            }
 //        });
+        binding.btnProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(HomeFragment.this).navigate(R.id.action_navigation_home_to_userProfileFragment);
+
+
+            }
+        });
         return root;
     }
 

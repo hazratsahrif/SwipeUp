@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.chat.ChatHistoryFragment">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:paddingTop="4dp"
+        android:backgroundTint="@color/white"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingVertical="16dp"
+            android:layout_marginHorizontal="24dp"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/btnBack"
+
+                android:layout_marginRight="16dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chats"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textColor="@color/light_black"
+                android:textSize="18sp"
+
+                />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+
+                android:id="@+id/btnAdd"
+                android:src="@drawable/plus___larger"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                />
+        </RelativeLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="16dp"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.FilledBox"
+            app:boxCornerRadiusBottomEnd="100dp"
+            app:boxCornerRadiusBottomStart="100dp"
+            android:layout_marginHorizontal="24dp"
+            android:layout_toEndOf="@id/btnBack"
+            android:id="@+id/edInput"
+            android:layout_toStartOf="@id/btnScan"
+            app:boxCornerRadiusTopStart="100dp"
+            app:boxCornerRadiusTopEnd="100dp"
+            android:layout_height="wrap_content"
+            app:boxBackgroundColor="#F3F5F6"
+            android:textSize="13sp"
+
+            app:hintEnabled="false"
+            app:startIconDrawable="@drawable/search"
+            app:startIconTint="@color/grey"
+            app:boxStrokeWidth="0dp"
+            app:hintTextColor="@color/black"
+            android:focusableInTouchMode="true"
+            app:boxStrokeWidthFocused="0dp"
+            android:textColor="#A4ADB7">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:hint="Search..."
+                android:background="@null"
+                android:id="@+id/editText"
+                android:textColorHint="@color/base300"
+                android:fontFamily="@font/inter_regular"
+                android:focusedByDefault="true"
+
+                android:lines="1"
+                android:scrollHorizontally="true"
+                android:ellipsize="end"
+                android:focusableInTouchMode="true"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:textSize="13sp"
+                android:textCursorDrawable="@drawable/curser"
+                android:paddingVertical="8dp"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="16dp"
+    android:id="@+id/recyclerView"
+    />
+
+</LinearLayout>

@@ -3,30 +3,22 @@ package com.example.myapplication.ui.search;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import androidx.viewpager.widget.ViewPager;
-import androidx.viewpager.widget.PagerAdapter;
 
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.TextView;
-import android.widget.Toast;
 
 
 import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.ViewModelProvider;
-import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.viewpager.widget.ViewPager;
 
 import com.example.myapplication.R;
 import com.example.myapplication.databinding.FragmentDashboardBinding;
@@ -37,11 +29,10 @@ import com.example.myapplication.models.TrendingTravelModel;
 import java.util.ArrayList;
 import java.util.List;
 
-import adapter.DiscoverHashTagAdapter;
-import adapter.TrendingAdapter;
-import adapter.TrendingLiveAdapter;
-import adapter.TrendingTravelAdapter;
-import adapter.ViewPagerAdapter;
+import com.example.myapplication.adapter.DiscoverHashTagAdapter;
+import com.example.myapplication.adapter.TrendingAdapter;
+import com.example.myapplication.adapter.TrendingLiveAdapter;
+import com.example.myapplication.adapter.ViewPagerAdapter;
 
 
 public class SearchFragment extends Fragment {

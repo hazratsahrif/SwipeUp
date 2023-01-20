@@ -20,6 +20,9 @@
         <action
             android:id="@+id/action_navigation_home_to_liveFragment"
             app:destination="@id/liveFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_userProfileFragment"
+            app:destination="@id/userProfileFragment" />
 
     </fragment>
 
@@ -45,12 +48,23 @@
         android:id="@+id/chatFragment"
         android:name="com.example.myapplication.ui.chat.ChatFragment"
         android:label="fragment_chat"
-        tools:layout="@layout/fragment_chat" />
+        tools:layout="@layout/fragment_chat" >
+        <action
+            android:id="@+id/action_chatFragment_to_chatHistoryFragment"
+            app:destination="@id/chatHistoryFragment" />
+    </fragment>
     <fragment
         android:id="@+id/userFragment"
         android:name="com.example.myapplication.ui.user.UserFragment"
         android:label="fragment_user"
-        tools:layout="@layout/fragment_user" />
+        tools:layout="@layout/fragment_user" >
+        <action
+            android:id="@+id/action_userFragment_to_liveShareBottomSheet"
+            app:destination="@id/liveShareBottomSheet" />
+        <action
+            android:id="@+id/action_userFragment_to_bookMarkFragment"
+            app:destination="@id/bookMarkFragment" />
+    </fragment>
     <dialog
         android:id="@+id/commentBottomSheet"
         android:name="utils.CommentBottomSheet"
@@ -104,6 +118,12 @@
         android:label="fragment_search_item"
         tools:layout="@layout/fragment_search_item" >
 
+        <action
+            android:id="@+id/action_searchItemFragment_to_hashTagResult"
+            app:destination="@id/hashTagResult" />
+        <action
+            android:id="@+id/action_searchItemFragment_to_musicTabResult"
+            app:destination="@id/musicTabResult" />
     </fragment>
     <fragment
         android:id="@+id/searchTabFragment"
@@ -170,6 +190,12 @@
         <action
             android:id="@+id/action_signInFragment_to_navigation_home"
             app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_signInFragment_to_forgotPasswordFragment"
+            app:destination="@id/forgotPasswordFragment" />
+        <action
+            android:id="@+id/action_signInFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
     </fragment>
     <fragment
         android:id="@+id/storyFragment"
@@ -204,6 +230,278 @@
         <action
             android:id="@+id/action_swipeLiveFragment_to_liveShareBottomSheet"
             app:destination="@id/liveShareBottomSheet" />
+    </fragment>
+    <fragment
+        android:id="@+id/hashTabFragment"
+        android:name="com.example.myapplication.ui.search.tabs.hashtag.HashTabFragment"
+        android:label="fragment_hash_tab"
+        tools:layout="@layout/fragment_hash_tab" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/hashTagResult"
+        android:name="com.example.myapplication.ui.search.tabs.hashtag.HashTagResult"
+        android:label="fragment_hash_tag_result"
+        tools:layout="@layout/fragment_hash_tag_result" />
+    <fragment
+        android:id="@+id/musicTabResult"
+        android:name="com.example.myapplication.ui.search.tabs.hashtag.MusicTabResult"
+        android:label="MusicTabResult" />
+    <fragment
+        android:id="@+id/bookMarkFragment"
+        android:name="com.example.myapplication.ui.user.BookMarkFragment"
+        android:label="fragment_book_mark"
+        tools:layout="@layout/fragment_book_mark" />
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="com.example.myapplication.ui.user.UserProfileFragment"
+        android:label="fragment_user_profile"
+        tools:layout="@layout/fragment_user_profile" >
+        <action
+            android:id="@+id/action_userProfileFragment_to_shareBottomSheet"
+            app:destination="@id/shareBottomSheet" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatHistoryFragment"
+        android:name="com.example.myapplication.ui.chat.ChatHistoryFragment"
+        android:label="fragment_chat_history"
+        tools:layout="@layout/fragment_chat_history" >
+        <action
+            android:id="@+id/action_chatHistoryFragment_to_addNewChatFragment"
+            app:destination="@id/addNewChatFragment" />
+        <action
+            android:id="@+id/action_chatHistoryFragment_to_chattingFragment"
+            app:destination="@id/chattingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNewChatFragment"
+        android:name="com.example.myapplication.ui.chat.AddNewChatFragment"
+        android:label="fragment_add_new_chat"
+        tools:layout="@layout/fragment_add_new_chat" />
+    <fragment
+        android:id="@+id/chattingFragment"
+        android:name="com.example.myapplication.ui.chat.ChattingFragment"
+        android:label="fragment_chating"
+        tools:layout="@layout/fragment_chating" >
+        <action
+            android:id="@+id/action_chattingFragment_to_callBottomSheet"
+            app:destination="@id/callBottomSheet" />
+        <action
+            android:id="@+id/action_chattingFragment_to_profileChatDetailsFragment"
+            app:destination="@id/profileChatDetailsFragment" />
+        <action
+            android:id="@+id/action_chattingFragment_to_settingFragment"
+            app:destination="@id/settingFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/callBottomSheet"
+        android:name="utils.CallBottomSheet"
+        android:label="fragment_call_bottom_sheet"
+        tools:layout="@layout/fragment_call_bottom_sheet" >
+        <action
+            android:id="@+id/action_callBottomSheet_to_callFragment"
+            app:destination="@id/callFragment" />
+        <action
+            android:id="@+id/action_callBottomSheet_to_videoCallFragment"
+            app:destination="@id/videoCallFragment" />
+    </dialog>
+    <fragment
+        android:id="@+id/profileChatDetailsFragment"
+        android:name="com.example.myapplication.ui.chat.ProfileChatDetailsFragment"
+        android:label="fragment_profile_chat_details"
+        tools:layout="@layout/fragment_profile_chat_details" />
+    <fragment
+        android:id="@+id/callFragment"
+        android:name="com.example.myapplication.ui.chat.call.CallFragment"
+        android:label="fragment_call"
+        tools:layout="@layout/fragment_call" />
+    <fragment
+        android:id="@+id/videoCallFragment"
+        android:name="com.example.myapplication.ui.chat.call.VideoCallFragment"
+        android:label="fragment_video_call"
+        tools:layout="@layout/fragment_video_call" >
+        <action
+            android:id="@+id/action_videoCallFragment_to_chatHistoryFragment"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/chattingFragment"
+            app:destination="@id/chatHistoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.myapplication.ui.settings.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" >
+        <action
+            android:id="@+id/action_settingFragment_to_manageAccountFragment"
+            app:destination="@id/manageAccountFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_privacyFragment"
+            app:destination="@id/privacyFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_contentFragment"
+            app:destination="@id/contentFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_analyticsFragment"
+            app:destination="@id/analyticsFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_languageFragment"
+            app:destination="@id/languageFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_helpCenterFragment"
+            app:destination="@id/helpCenterFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_notificationFragment"
+            app:destination="@id/notificationFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_safetyFragment"
+            app:destination="@id/safetyFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_termsOfServiceFragment"
+            app:destination="@id/termsOfServiceFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_articleFragment"
+            app:destination="@id/articleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/manageAccountFragment"
+        android:name="com.example.myapplication.ui.settings.ManageAccountFragment"
+        android:label="fragment_manage_account"
+        tools:layout="@layout/fragment_manage_account" />
+    <fragment
+        android:id="@+id/privacyFragment"
+        android:name="com.example.myapplication.ui.settings.PrivacyFragment"
+        android:label="fragment_privacy"
+        tools:layout="@layout/fragment_privacy" />
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.example.myapplication.ui.settings.NotificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" />
+    <fragment
+        android:id="@+id/helpCenterFragment"
+        android:name="com.example.myapplication.ui.settings.HelpCenterFragment"
+        android:label="fragment_help_center"
+        tools:layout="@layout/fragment_help_center" />
+    <fragment
+        android:id="@+id/languageFragment"
+        android:name="com.example.myapplication.ui.settings.LanguageFragment"
+        android:label="fragment_language"
+        tools:layout="@layout/fragment_language" />
+    <fragment
+        android:id="@+id/analyticsFragment"
+        android:name="com.example.myapplication.ui.settings.AnalyticsFragment"
+        android:label="fragment_analytics"
+        tools:layout="@layout/fragment_analytics" />
+    <fragment
+        android:id="@+id/contentFragment"
+        android:name="com.example.myapplication.ui.settings.analyticstab.ContentFragment"
+        android:label="fragment_content"
+        tools:layout="@layout/fragment_content" />
+    <fragment
+        android:id="@+id/safetyFragment"
+        android:name="com.example.myapplication.ui.settings.SafetyFragment"
+        android:label="fragment_safety"
+        tools:layout="@layout/fragment_safety" />
+    <fragment
+        android:id="@+id/termsOfServiceFragment"
+        android:name="com.example.myapplication.ui.settings.TermsOfServiceFragment"
+        android:label="fragment_terms_of_service"
+        tools:layout="@layout/fragment_terms_of_service" />
+    <fragment
+        android:id="@+id/articleFragment"
+        android:name="com.example.myapplication.ui.settings.ArticleFragment"
+        android:label="fragment_article"
+        tools:layout="@layout/fragment_article" />
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="com.example.myapplication.ui.signin.ForgotPasswordFragment"
+        android:label="fragment_forgot_password"
+        tools:layout="@layout/fragment_forgot_password" >
+        <action
+            android:id="@+id/action_forgotPasswordFragment_to_otpVerificationFragment"
+            app:destination="@id/otpVerificationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/otpVerificationFragment"
+        android:name="com.example.myapplication.ui.signin.OtpVerificationFragment"
+        android:label="fragment_otp_verification"
+        tools:layout="@layout/fragment_otp_verification" >
+        <action
+            android:id="@+id/action_otpVerificationFragment_to_setNewPasswordFragment"
+            app:destination="@id/setNewPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/setNewPasswordFragment"
+        android:name="com.example.myapplication.ui.signin.SetNewPasswordFragment"
+        android:label="fragment_set_new_password"
+        tools:layout="@layout/fragment_set_new_password" />
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.myapplication.ui.signup.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_signUpOtpFragment"
+            app:destination="@id/signUpOtpFragment" />
+        <action
+            android:id="@+id/action_signUpFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseUserNameFragment"
+        android:name="com.example.myapplication.ui.signup.ChooseUserNameFragment"
+        android:label="fragment_choose_user_name"
+        tools:layout="@layout/fragment_choose_user_name" >
+        <action
+            android:id="@+id/action_chooseUserNameFragment_to_choosePageNameFragment"
+            app:destination="@id/choosePageNameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/choosePageNameFragment"
+        android:name="com.example.myapplication.ui.signup.ChoosePageNameFragment"
+        android:label="fragment_choose_page_name"
+        tools:layout="@layout/fragment_choose_page_name" >
+        <action
+            android:id="@+id/action_choosePageNameFragment_to_birthDayFragment"
+            app:destination="@id/birthDayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/birthDayFragment"
+        android:name="com.example.myapplication.ui.signup.BirthDayFragment"
+        android:label="fragment_birth_day"
+        tools:layout="@layout/fragment_birth_day" >
+        <action
+            android:id="@+id/action_birthDayFragment_to_setPasswordFragment"
+            app:destination="@id/setPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/setPasswordFragment"
+        android:name="com.example.myapplication.ui.signup.SetPasswordFragment"
+        android:label="fragment_set_password"
+        tools:layout="@layout/fragment_set_password" />
+    <fragment
+        android:id="@+id/signUpOtpFragment"
+        android:name="com.example.myapplication.ui.signup.SignUpOtpFragment"
+        android:label="fragment_sign_up_otp"
+        tools:layout="@layout/fragment_sign_up_otp" >
+        <action
+            android:id="@+id/action_signUpOtpFragment_to_chooseUserNameFragment"
+            app:destination="@id/chooseUserNameFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/phoneTab"
+        android:name="com.example.myapplication.ui.signup.tabs.PhoneTab"
+        android:label="fragment_phone_tab"
+        tools:layout="@layout/fragment_phone_tab" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/emailTab"
+        android:name="com.example.myapplication.ui.signup.tabs.EmailTab"
+        android:label="fragment_email_tab"
+        tools:layout="@layout/fragment_email_tab" >
+
     </fragment>
 
 

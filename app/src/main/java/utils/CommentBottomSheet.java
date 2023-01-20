@@ -1,38 +1,25 @@
 package utils;
 
-import android.app.Dialog;
-import android.content.Context;
-import android.content.DialogInterface;
-import android.os.Build;
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
-import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.ViewTreeObserver;
-import android.widget.FrameLayout;
-import android.widget.Toast;
 
 import com.example.myapplication.R;
 import com.example.myapplication.databinding.FragmentCommentBottomSheetBinding;
 import com.example.myapplication.models.BottomCommentDataModel;
 import com.example.myapplication.models.CommentDataModel;
-import com.google.android.material.bottomsheet.BottomSheetBehavior;
-import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import adapter.CommentAdapter;
-import adapter.EmojisAdapter;
+import com.example.myapplication.adapter.CommentAdapter;
+import com.example.myapplication.adapter.EmojisAdapter;
 
 public class CommentBottomSheet extends BottomSheetDialogFragment implements CommentAdapter.onLongPress {
     FragmentCommentBottomSheetBinding binding;

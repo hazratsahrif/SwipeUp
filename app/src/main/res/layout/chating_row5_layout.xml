@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:background="@drawable/voice_note"
+        android:layout_marginRight="26dp"
+        android:layout_marginLeft="106dp"
+        android:layout_gravity="start"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginRight="12dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="56dp"
+                app:cardElevation="0dp"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="100dp"
+                android:layout_height="56dp">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/play_21"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    />
+            </com.google.android.material.card.MaterialCardView>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/audio_wave"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="5:30"
+                        android:id="@+id/time"
+                        android:drawablePadding="6dp"
+                        android:drawableRight="@drawable/active_dot"
+                        android:textSize="11sp"
+                        android:fontFamily="@font/inter_medium"
+                        android:layout_height="wrap_content"
+
+                        />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="5:30"
+                        android:layout_gravity="bottom"
+                        android:drawableRight="@drawable/check___double"
+                        android:textSize="11sp"
+                        android:fontFamily="@font/inter_medium"
+                        android:layout_height="wrap_content"
+
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

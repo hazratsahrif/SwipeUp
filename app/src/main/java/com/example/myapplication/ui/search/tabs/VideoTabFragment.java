@@ -16,8 +16,8 @@ import com.example.myapplication.models.TrendingTravelModel;
 
 import java.util.ArrayList;
 
-import adapter.TopVideosAdapter;
-import adapter.TrendingTravelAdapter;
+import com.example.myapplication.adapter.TopVideosAdapter;
+
 import utils.GridSpacingItemDecoration;
 
 

@@ -12,12 +12,11 @@ import android.view.ViewGroup;
 
 import com.example.myapplication.R;
 import com.example.myapplication.databinding.FragmentPortraitTabBinding;
-import com.example.myapplication.databinding.FragmentProfileBinding;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import adapter.PortraitAdapter;
+import com.example.myapplication.adapter.PortraitAdapter;
 import model.PortraitDataItem;
 
 public class PortraitTab extends Fragment {

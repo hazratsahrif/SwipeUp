@@ -1,15 +1,9 @@
 package utils;
 
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 
 import androidx.core.content.ContextCompat;
-import androidx.fragment.app.DialogFragment;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -17,20 +11,17 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
 import android.widget.Toast;
 
 import com.example.myapplication.R;
 import com.example.myapplication.databinding.FragmentShareBottomSheetBinding;
-import com.example.myapplication.ui.search.QRCodeFragment;
-import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
 import java.util.ArrayList;
 
-import adapter.ActionAdapterClass;
-import adapter.ProfileAdapterClass;
-import adapter.SocialAdapterClass;
+import com.example.myapplication.adapter.ActionAdapterClass;
+import com.example.myapplication.adapter.ProfileAdapterClass;
+import com.example.myapplication.adapter.SocialAdapterClass;
 import model.ActionModel;
 import model.ProfileClass;
 import model.SocialModel;

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.chat.ChattingFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/white"
+        android:id="@+id/appBar"
+        android:layout_marginBottom="8dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_marginVertical="8dp"
+            android:layout_width="match_parent"
+
+
+
+            android:layout_marginHorizontal="24dp"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnBack"
+                android:layout_centerVertical="true"
+                android:src="@drawable/back"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                />
+            <RelativeLayout
+                android:layout_toRightOf="@id/btnBack"
+                android:layout_width="wrap_content"
+                android:id="@+id/btbLayout"
+
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="40dp"
+                    android:id="@+id/cvBorder"
+                    app:cardCornerRadius="100dp"
+                    android:layout_centerVertical="true"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    android:elevation="0dp"
+                    app:cardElevation="0dp"
+                    android:layout_height="40dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/avatar"
+                        android:layout_gravity="center"
+                        android:src="@drawable/avatar_man"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/live_layout"
+                        android:visibility="gone"
+                        android:layout_gravity="center|bottom"
+                        android:background="@drawable/curve">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginVertical="2dp"
+                            android:text="Live"
+                            android:fontFamily="@font/inter_medium"
+                            android:textColor="@color/white"
+
+
+                            android:textSize="8sp">
+
+                        </TextView>
+                    </LinearLayout>
+
+
+
+
+
+                </com.google.android.material.card.MaterialCardView>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toRightOf="@id/cvBorder"
+                    android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/tvFName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/inter_semibold"
+                            android:text="James Mounter"
+                            android:maxLines="1"
+                            android:drawablePadding="5dp"
+                            android:gravity="center_vertical"
+                            android:drawableRight="@drawable/chec_circle__1"
+                            android:ellipsize="marquee"
+                            android:textColor="@color/light_black"
+                            android:textSize="16sp"
+
+                            />
+
+
+
+
+
+
+                    <TextView
+                        android:id="@+id/tvLName"
+                        android:layout_width="wrap_content"
+
+                        android:maxLines="1"
+                        android:ellipsize="marquee"
+                        android:textColor="@color/base500"
+                        android:fontFamily="@font/inter_regular"
+                        android:layout_height="wrap_content"
+                        android:text="@travelguru"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+
+
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/call___add"
+                app:tint="@color/grey"
+                android:id="@+id/btnCall"
+                android:layout_marginRight="17dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/more___horiz"
+                app:tint="@color/grey"
+                android:id="@+id/btnMore"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_below="@id/appBar"
+        android:id="@+id/recyclerView"
+        android:layout_above="@id/footer"
+        android:layout_height="wrap_content">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:gravity="bottom"
+        android:elevation="9dp"
+        android:id="@+id/footer"
+        app:elevation="10dp"
+        android:backgroundTint="@color/white"
+
+        android:layout_alignParentBottom="true"
+        android:layout_height="?actionBarSize">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/btnSmile"
+                android:layout_centerVertical="true"
+                android:src="@drawable/smile"
+                android:background="?selectableItemBackgroundBorderless"
+                />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:id="@+id/edInput"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/btnCam"
+                android:layout_toRightOf="@id/btnSmile"
+                android:layout_height="wrap_content"
+                app:boxBackgroundColor="#ffffff"
+                android:hint="Search anything..."
+                android:textSize="13sp"
+                app:hintEnabled="false"
+                app:boxStrokeWidth="0dp"
+                app:hintTextColor="@color/black"
+                app:endIconDrawable="@drawable/mic"
+                app:endIconMode="custom"
+                app:boxStrokeWidthFocused="0dp"
+                android:textColor="@color/black">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:hint="Message..."
+                    android:background="@null"
+                    android:lines="1"
+                    android:scrollHorizontally="true"
+                    android:ellipsize="end"
+                    android:id="@+id/editText"
+                    android:textColorHint="@color/base500"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:textSize="14sp"
+                    android:drawablePadding="8dp"
+                    android:textCursorDrawable="@drawable/curser"
+                    android:paddingVertical="11dp"
+                    android:layout_height="wrap_content"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <ImageButton
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/btnCam"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/camera"
+                android:background="?selectableItemBackgroundBorderless"
+                />
+        </RelativeLayout>
+
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+</RelativeLayout>

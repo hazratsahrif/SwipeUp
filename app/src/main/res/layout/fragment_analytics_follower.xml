@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    tools:context=".ui.settings.analyticstab.AnalyticsFollowerFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/inter_bold"
+
+            android:text="32,204"
+            android:textColor="@color/base900"
+            android:textSize="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/inter_regular"
+            android:text="Last 7 days"
+            android:textColor="@color/base300"
+            android:textSize="14sp"
+
+            />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/info"
+            android:drawablePadding="6dp"
+
+            android:fontFamily="@font/inter_semibold"
+            android:paddingVertical="6dp"
+            android:text="Gender"
+            android:textColor="@color/base900" />
+
+
+        <com.anychart.anychart.AnyChartView
+            android:id="@+id/any_chart_view"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="200dp"
+            />
+        <com.github.mikephil.charting.charts.PieChart
+            android:layout_width="158dp"
+            android:layout_height="158dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:id="@+id/pieChart_view"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="64dp"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvFemale"
+                    android:fontFamily="@font/inter_bold"
+                    android:text="32,204"
+                    android:textColor="@color/red"
+                    android:textSize="24dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="Female"
+                    android:layout_marginTop="8dp"
+
+                    android:textColor="@color/red"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                app:dividerColor="@color/base100"
+                />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvMale"
+                    android:fontFamily="@font/inter_bold"
+                    android:text="32,204"
+                    android:textColor="@color/red700"
+                    android:textSize="24dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="Male"
+
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/red700"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/info"
+            android:drawablePadding="6dp"
+            android:layout_marginTop="40dp"
+
+            android:fontFamily="@font/inter_semibold"
+            android:paddingVertical="6dp"
+            android:text="Top Territories"
+            android:textColor="@color/base900" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:clipToPadding="false"
+            android:nestedScrollingEnabled="false"
+            android:id="@+id/recyclerViewProgress"
+            android:layout_height="match_parent">
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

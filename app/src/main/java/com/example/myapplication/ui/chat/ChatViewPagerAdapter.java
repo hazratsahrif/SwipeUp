@@ -7,6 +7,11 @@ import androidx.lifecycle.Lifecycle;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 import com.example.myapplication.ui.chat.tabs.AllTabsFragmnet;
+import com.example.myapplication.ui.chat.tabs.CommentsFragment;
+import com.example.myapplication.ui.chat.tabs.FollowersTabFragment;
+import com.example.myapplication.ui.chat.tabs.LikesTab;
+import com.example.myapplication.ui.chat.tabs.MentionTabFragment;
+import com.example.myapplication.ui.chat.tabs.SwipeUpTabFragment;
 
 
 public class ChatViewPagerAdapter extends FragmentStateAdapter {
@@ -25,18 +30,26 @@ public class ChatViewPagerAdapter extends FragmentStateAdapter {
             return new AllTabsFragmnet();
         }
         else if(position==1){
-            return new AllTabsFragmnet();
+            return new LikesTab();
 
         }
         else if(position==2){
-            return new AllTabsFragmnet();
+            return new CommentsFragment();
 
         }
-        return new AllTabsFragmnet();
+        else if(position==3){
+            return new FollowersTabFragment();
+
+        }
+        else if(position==4){
+            return new MentionTabFragment();
+
+        }
+        return new SwipeUpTabFragment();
     }
 
     @Override
     public int getItemCount() {
-        return 4;
+        return 6;
     }
 }

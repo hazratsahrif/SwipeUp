@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    tools:context=".ui.settings.analyticstab.ContentFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:fitsSystemWindows="true"
+        android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_height="wrap_content">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Video Views"
+
+        android:textColor="@color/base900"
+        android:fontFamily="@font/inter_semibold"
+        android:drawableRight="@drawable/info"
+        android:drawablePadding="6dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="32dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="480,328"
+
+            android:fontFamily="@font/inter_bold"
+            android:textColor="@color/base900"
+            android:textSize="24dp"
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Post"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/inter_semibold"
+            android:textColor="@color/red"
+            android:textSize="14sp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last 7 days"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/inter_regular"
+        android:textColor="@color/base300"
+        android:textSize="14sp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+3 posts Sep 14 – Sep 19"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/inter_regular"
+        android:textColor="@color/base300"
+        android:textSize="14sp"
+        />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+
+        android:layout_marginHorizontal="16dp"
+        android:id="@+id/recyclerView"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trending Videos"
+        android:paddingVertical="8dp"
+        android:layout_marginLeft="20dp"
+
+        android:layout_marginTop="59dp"
+
+        android:textColor="@color/base900"
+        android:fontFamily="@font/inter_semibold"
+        android:drawableRight="@drawable/info"
+        android:drawablePadding="6dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last 7 days"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/inter_regular"
+        android:textColor="@color/base300"
+        android:textSize="14sp"
+
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+
+        android:id="@+id/recyclerView2"
+        />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

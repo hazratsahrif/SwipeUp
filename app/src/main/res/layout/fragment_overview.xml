@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.settings.analyticstab.OverviewFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+
+        android:layout_marginTop="24dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Video Views"
+                android:textColor="@color/base900"
+                android:fontFamily="@font/inter_semibold"
+                android:drawableRight="@drawable/info"
+                android:drawablePadding="6dp"
+                />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7 days"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/inter_semibold"
+                android:textColor="@color/red"
+                android:textSize="14sp"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="28 days"
+                android:fontFamily="@font/inter_semibold"
+                android:textColor="@color/base300"
+                android:textSize="14sp"
+
+                />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="480,328"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/inter_bold"
+            android:textColor="@color/base900"
+            android:textSize="24dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last 7 days"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/inter_regular"
+            android:textColor="@color/base300"
+            android:textSize="14sp"
+
+            />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/idBarChart"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:layout_height="220dp">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_height="168dp">
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="match_parent"
+                    app:dividerColor="@color/base100"
+                    android:layout_height="1dp"/>
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="match_parent"
+                    app:dividerColor="@color/base100"
+                    android:layout_marginTop="32dp"
+                    android:layout_height="1dp"/>
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="match_parent"
+                    app:dividerColor="@color/base100"
+                    android:layout_marginTop="32dp"
+                    android:layout_height="1dp"/>
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="match_parent"
+                    app:dividerColor="@color/base100"
+                    android:layout_marginTop="32dp"
+                    android:layout_height="1dp"/>
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="match_parent"
+                    app:dividerColor="@color/base100"
+                    android:layout_marginTop="32dp"
+                    android:layout_height="1dp"/>
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="match_parent"
+                    app:dividerColor="@color/base100"
+                    android:layout_marginTop="32dp"
+                    android:layout_height="1dp"/>
+            </LinearLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                tools:listitem="@layout/barchart_layout"
+                android:id="@+id/recyclerView"
+
+                android:layout_height="wrap_content"/>
+
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Followers"
+                android:textColor="@color/base900"
+                android:fontFamily="@font/inter_semibold"
+                android:drawableRight="@drawable/info"
+                android:drawablePadding="6dp"
+                />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7 days"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/inter_semibold"
+                android:textColor="@color/red"
+                android:textSize="14sp"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="28 days"
+                android:fontFamily="@font/inter_semibold"
+                android:textColor="@color/base300"
+                android:textSize="14sp"
+
+                />
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="32,204"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/inter_bold"
+            android:textColor="@color/base900"
+            android:textSize="24dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="As of today"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/inter_regular"
+            android:textColor="@color/base300"
+            android:textSize="14sp"
+
+            />
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/lineChart"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+
+            />
+    </LinearLayout>
+
+</ScrollView>

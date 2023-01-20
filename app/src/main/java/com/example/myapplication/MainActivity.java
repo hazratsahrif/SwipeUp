@@ -32,10 +32,10 @@ public class MainActivity extends AppCompatActivity {
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
 
-        getWindow().setFlags(
-                WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
-                WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
-        );
+//        getWindow().setFlags(
+//                WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
+//                WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
+//        );
 
 
 //                transparentStatusAndNavigation();
@@ -80,6 +80,42 @@ public class MainActivity extends AppCompatActivity {
                         || navDestination.getId()==R.id.storyFragment
                         || navDestination.getId()==R.id.gifBottomSheet
                         || navDestination.getId()==R.id.swipeLiveFragment
+                        || navDestination.getId()==R.id.hashTagResult
+                        || navDestination.getId()==R.id.musicTabResult
+                        || navDestination.getId()==R.id.bookMarkFragment
+                        || navDestination.getId()==R.id.userProfileFragment
+                        || navDestination.getId()==R.id.chatHistoryFragment
+                        || navDestination.getId()==R.id.addNewChatFragment
+                        || navDestination.getId()==R.id.chattingFragment
+                        || navDestination.getId()==R.id.callBottomSheet
+                        || navDestination.getId()==R.id.callFragment
+                        || navDestination.getId()==R.id.profileChatDetailsFragment
+                        || navDestination.getId()==R.id.videoCallFragment
+                        || navDestination.getId()==R.id.settingFragment
+                        || navDestination.getId()==R.id.notificationFragment
+                        || navDestination.getId()==R.id.analyticsFragment
+                        || navDestination.getId()==R.id.contentFragment
+                        || navDestination.getId()==R.id.privacyFragment
+                        || navDestination.getId()==R.id.safetyFragment
+                        || navDestination.getId()==R.id.languageFragment
+                        || navDestination.getId()==R.id.helpCenterFragment
+                        || navDestination.getId()==R.id.termsOfServiceFragment
+                        || navDestination.getId()==R.id.manageAccountFragment
+                        || navDestination.getId()==R.id.articleFragment
+                        || navDestination.getId()==R.id.signUpFragment
+                        || navDestination.getId()==R.id.chooseUserNameFragment
+                        || navDestination.getId()==R.id.choosePageNameFragment
+                        || navDestination.getId()==R.id.setNewPasswordFragment
+                        || navDestination.getId()==R.id.setPasswordFragment
+                        || navDestination.getId()==R.id.signUpOtpFragment
+                        || navDestination.getId()==R.id.birthDayFragment
+                        || navDestination.getId()==R.id.emailTab
+                        || navDestination.getId()==R.id.phoneTab
+                        || navDestination.getId()==R.id.otpVerificationFragment
+                        || navDestination.getId()==R.id.shareBottomSheet
+
+
+
                 ){
                     binding.navView.setVisibility(View.GONE);
                 }

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="220dp"
+    android:background="?selectableItemBackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="53dp"
+        android:layout_alignParentTop="true"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="96.4k"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tvHeader"
+            android:textSize="14sp"
+            android:visibility="gone"
+            android:drawablePadding="5dp"
+            android:drawableBottom="@drawable/tab"
+            android:fontFamily="@font/inter_medium"
+            android:textColor="@color/red"/>
+
+        <RelativeLayout
+            android:layout_width="53dp"
+            android:layout_centerVertical="true"
+            android:layout_below="@id/tvHeader"
+            android:layout_height="166dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/viewLayout"
+
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:layout_above="@id/cvProgress"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:id="@+id/line"
+
+                    android:layout_below="@id/tvHeader"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/lineimg"
+                    android:layout_centerHorizontal="true"
+
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="32dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/cvProgress"
+                app:cardElevation="0dp"
+                android:layout_alignParentBottom="true"
+                android:background="?selectableItemBackground"
+                android:layout_gravity="bottom"
+                android:layout_height="120dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:src="@drawable/progressack"
+                    android:id="@+id/progressBack"
+                    android:scaleType="centerCrop"
+                    android:layout_height="match_parent">
+
+
+                </ImageView>
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20 Sep"
+            android:layout_centerHorizontal="true"
+            android:textSize="12sp"
+            android:layout_marginTop="8dp"
+            android:gravity="bottom"
+            android:fontFamily="@font/inter_regular"
+            android:textColor="@color/base300"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

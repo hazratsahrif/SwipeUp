@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ui.signup.ChooseUserNameFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/white"
+        android:id="@+id/appBar"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="24dp"
+            android:layout_marginVertical="12dp"
+            android:layout_marginRight="16dp"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/back"
+                android:id="@+id/btnBack"
+                android:layout_alignParentLeft="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose Username"
+                android:textSize="18sp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"
+                android:fontFamily="@font/inter_semibold"
+
+
+                />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                app:cardElevation="0dp"
+                android:elevation="0dp"
+                app:cardBackgroundColor="@color/red"
+                android:layout_alignParentRight="true"
+                app:cardCornerRadius="32dp"
+
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="1/4"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_marginVertical="4dp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/inter_medium"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.card.MaterialCardView>
+
+        </RelativeLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is the title of your page? It could just be your name or something else"
+        android:fontFamily="@font/inter_regular"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="20dp"
+        android:textSize="15sp"
+
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        style="@style/LoginTextInputLayoutStyle"
+        app:boxCornerRadiusBottomEnd="12dp"
+        app:boxCornerRadiusBottomStart="12dp"
+        android:id="@+id/tvInput"
+        app:boxStrokeColor="@color/red"
+        app:boxStrokeWidthFocused="1.5dp"
+        android:layout_marginTop="24dp"
+        app:hintEnabled="false"
+
+        app:errorTextColor="@color/red"
+        android:layout_marginHorizontal="20dp"
+        app:boxCornerRadiusTopEnd="12dp"
+        app:boxCornerRadiusTopStart="12dp"
+        android:textColorHint="@color/hint_color"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:hint="Username"
+            android:textColorHint="@color/hint_color"
+            android:background="@null"
+
+            android:id="@+id/editText"
+            android:focusedByDefault="true"
+            android:lines="1"
+            android:scrollHorizontally="true"
+            android:ellipsize="end"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:textSize="15sp"
+            android:textCursorDrawable="@drawable/curser"
+            android:paddingVertical="14dp"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/layoutError"
+        android:visibility="gone"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/alert_circle"
+            android:layout_marginHorizontal="20dp"
+
+
+            android:drawablePadding="12dp"
+            android:textSize="13sp"
+            android:textColor="@color/red"
+            android:text="This name is already taken. Please try another"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/layoutAvailable"
+        android:visibility="gone"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/greencheck"
+            android:layout_marginHorizontal="20dp"
+
+            android:drawablePadding="12dp"
+            android:textSize="13sp"
+            android:textColor="@color/green"
+            android:text="It’s available!"
+            />
+
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cornerRadius="100dp"
+        android:id="@+id/btnNext"
+        android:letterSpacing="0"
+        app:elevation="0dp"
+        android:elevation="0dp"
+        android:stateListAnimator="@null"
+        android:backgroundTint="@color/hint_color"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="40dp"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:fontFamily="@font/inter_medium"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+
+
+        />
+
+
+</LinearLayout>

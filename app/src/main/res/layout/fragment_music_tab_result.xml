@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.search.tabs.hashtag.HashTagResult">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+
+        android:paddingVertical="16dp"
+        android:layout_marginRight="22dp"
+        android:backgroundTint="@color/white"
+        android:elevation="0dp"
+        app:elevation="0dp"
+
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnBcak"
+                android:layout_marginLeft="22dp"
+                android:src="@drawable/back"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                />
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/share"
+                app:tint="@color/grey"
+                android:layout_marginRight="17dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bookmark"
+                app:tint="@color/grey"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                />
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:paddingVertical="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_height="wrap_content"
+
+        android:gravity="center_vertical">
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:strokeWidth="1dp"
+            android:id="@+id/cvSound2"
+            app:strokeColor="#E8EAED"
+            app:cardElevation="0dp"
+            android:elevation="0dp"
+            app:cardCornerRadius="100dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/girls_ava"
+                />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meghan Thee Stallion"
+            android:layout_toRightOf="@id/cvSound2"
+            android:id="@+id/tvSound2"
+            android:fontFamily="@font/inter_semibold"
+            android:layout_marginStart="16dp"
+            android:textSize="15sp"
+            android:textColor="#2B323B"/>
+        <include layout="@layout/verified_tick"
+            android:layout_toRightOf="@id/tvSound2"
+            android:layout_marginTop="2dp"
+
+            android:layout_marginLeft="6dp"
+
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/cvSound2"
+            android:id="@+id/tvViews2"
+            android:layout_marginStart="16dp"
+            android:layout_below="@id/tvSound2"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="a@megthee"
+            android:textSize="15sp"
+            android:textColor="@color/grey"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="2dp"
+
+            android:layout_alignParentRight="true"
+            android:src="@drawable/union_r"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            />
+    </RelativeLayout>
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="8dp"
+        android:layout_marginHorizontal="16dp"
+        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:paddingVertical="12dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_height="wrap_content"
+
+        android:gravity="center_vertical">
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:strokeWidth="1dp"
+            android:id="@+id/cvSound"
+            app:strokeColor="#E8EAED"
+            app:cardElevation="0dp"
+            android:elevation="0dp"
+            app:cardCornerRadius="100dp">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:background="@drawable/playback"
+                android:id="@+id/ivBk"
+                android:layout_height="wrap_content">
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="24dp"
+                    app:cardBackgroundColor="#29FFFFFF"
+                    app:cardCornerRadius="100dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="24dp">
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="18dp"
+                    android:src="@drawable/play_" />
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Travel Time"
+            android:layout_toRightOf="@id/cvSound"
+            android:id="@+id/tvSound"
+            android:fontFamily="@font/inter_semibold"
+            android:layout_marginStart="16dp"
+            android:textSize="15sp"
+            android:textColor="#2B323B"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/cvSound"
+            android:id="@+id/tvViews"
+            android:layout_marginStart="16dp"
+            android:layout_below="@id/tvSound"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Vivamus Lectus"
+            android:textSize="15sp"
+            android:textColor="@color/grey"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+
+            android:drawablePadding="12dp"
+            android:text="24.6 M"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="@android:color/transparent"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_marginTop="12dp"
+            android:layout_marginHorizontal="8dp"
+            android:id="@+id/recyclerView"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            app:cornerRadius="100dp"
+            app:elevation="0dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:elevation="0dp"
+            android:backgroundTint="@color/red"
+            android:drawableLeft="@drawable/videos_cam"
+            android:text="Use this sound"
+            android:textAllCaps="false"
+            android:letterSpacing="0"
+            android:fontFamily="@font/inter_medium"
+            android:textSize="15sp"
+            android:layout_height="wrap_content">
+
+
+        </com.google.android.material.button.MaterialButton>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

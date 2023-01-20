@@ -15,7 +15,7 @@ import com.example.myapplication.models.UserModel;
 
 import java.util.ArrayList;
 
-import adapter.UserAdapter;
+import com.example.myapplication.adapter.UserAdapter;
 
 
 public class UserTabFragment extends Fragment {
