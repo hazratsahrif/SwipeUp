@@ -3,18 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginHorizontal="16dp"
+
     android:orientation="vertical">
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
+        android:weightSum="1"
         android:orientation="horizontal">
-
         <RelativeLayout
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
             android:layout_gravity="center_vertical"
             android:layout_height="wrap_content">
 
@@ -41,7 +42,6 @@
                 android:layout_marginRight="8dp"
                 android:layout_marginLeft="15dp"
                 android:layout_toEndOf="@id/cvAvatar"
-                android:layout_toStartOf="@id/cv"
                 android:orientation="vertical">
 
                 <TextView
@@ -62,15 +62,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="commented on your post ・ "
+                        android:text="commented on your post ・2d "
                         android:textSize="14sp" />
-                    <TextView
-                        android:id="@+id/tvTime"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="2d"
 
-                        android:textSize="14sp" />
                 </LinearLayout>
 
 
@@ -82,17 +76,24 @@
                         android:layout_marginTop="6dp"
                         android:layout_alignParentStart="true"
                         android:id="@+id/cvComment"
+
                         android:orientation="horizontal"
                         android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:id="@+id/cv1"
+                            android:layout_height="wrap_content">
+
                     <com.google.android.material.card.MaterialCardView
                         android:layout_width="wrap_content"
                         android:layout_marginRight="12dp"
-                        android:id="@+id/cv1"
 
                         app:cardCornerRadius="20dp"
                         android:layout_alignParentStart="true"
                         app:cardBackgroundColor="@color/light_white"
                         android:elevation="0dp"
+                        android:layout_toLeftOf="@id/btnHeart"
                         app:cardElevation="0dp"
                         android:layout_height="wrap_content">
 
@@ -105,16 +106,19 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:maxWidth="192dp"
-                            android:text="Looks like a heaven! Is your fluffy Max with you? 🐕"
+                            android:text="Looks like a heaven!"
                             android:textSize="14sp"
                             />
 
 
                     </com.google.android.material.card.MaterialCardView>
+
+                        </LinearLayout>
                         <ImageButton
                             android:layout_width="wrap_content"
-                            android:layout_toRightOf="@id/cv1"
                             android:id="@+id/btnHeart"
+                            android:layout_toRightOf="@id/cv1"
+
                             android:layout_centerVertical="true"
                             android:layout_gravity="center_vertical"
                             android:layout_height="wrap_content"
@@ -129,31 +133,31 @@
 
             </LinearLayout>
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="56dp"
-                android:id="@+id/cv"
-                app:cardCornerRadius="12dp"
 
-                android:layout_alignParentRight="true"
-                android:elevation="0dp"
-                app:cardElevation="0dp"
-                android:layout_height="80dp">
-
-                <ImageView
-                    android:id="@+id/coverImage"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/cover"
-                    />
-
-            </androidx.cardview.widget.CardView>
 
 
         </RelativeLayout>
 
+        <androidx.cardview.widget.CardView
+            android:layout_width="56dp"
+            android:layout_marginHorizontal="8dp"
+            android:layout_gravity="right"
+            android:id="@+id/cv"
+            app:cardCornerRadius="12dp"
+            android:elevation="0dp"
+            app:cardElevation="0dp"
+            android:layout_height="80dp">
 
+            <ImageView
+                android:id="@+id/coverImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:scaleType="centerCrop"
+                android:src="@drawable/cover"
+                />
+
+        </androidx.cardview.widget.CardView>
 
 
 

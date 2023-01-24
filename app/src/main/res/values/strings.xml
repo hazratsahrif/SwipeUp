@@ -53,4 +53,5 @@
     <string name="reset">Please enter the verification code we just sent to your email. Didn’t get it?<b><font color="#FF5B71"> Resend code</font></b></string>
     <string name="make_sure">Make sure your new passwords are<b><font color="#000">at least eight characters long.</font></b> Strong password uses combination of uppercase and lowercase letters, symbols and numbers. But we don’t insist on it.</string>
     <string name="by_entering">By entering your phone number you agree to our<b><font color="#FF5B71"> Terms of Use</font></b> and <b><font color="#FF5B71">Privacy Policy</font></b></string>
+    <string name="another_day_another_beach_i_want_to_leave_like_nthis_forever_travel_nature_ocean">Another day, another beach. I want to leave like\nthis forever <b>#travel #nature #ocean</b></string>
 </resources>

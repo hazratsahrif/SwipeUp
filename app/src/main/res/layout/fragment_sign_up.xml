@@ -47,22 +47,35 @@
             android:layout_width="match_parent"
             android:paddingVertical="0.5dp"
             android:scrollbars="none"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="7dp"
+
             android:fillViewport="true"
-            android:isScrollContainer="true"
+            android:isScrollContainer="false"
             app:tabMode="fixed"
             app:tabSelectedTextColor="@color/red"
+            android:layout_marginHorizontal="92dp"
             app:tabIndicatorFullWidth="false"
-            app:tabGravity="center"
+
             android:layout_gravity="center"
-
             android:clipToPadding="true"
-
             app:tabTextColor="#6C7989"
             app:tabIndicator="@drawable/tab"
             app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
             app:tabIndicatorColor="@color/red"
-            android:layout_height="42dp" >
+            android:layout_height="43dp" >
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                />
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                />
+
+
 
         </com.google.android.material.tabs.TabLayout>
     </com.google.android.material.appbar.AppBarLayout>

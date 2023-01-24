@@ -39,7 +39,7 @@ public class CommentTabAdapter extends RecyclerView.Adapter<CommentTabAdapter.Vi
         holder.binding.avatar1.setImageResource(model.getAvatar());
         holder.binding.coverImage.setImageResource(model.getImgCover());
         holder.binding.tvComment.setText(model.getTvComment());
-        holder.binding.tvTime.setText(model.getTvDay());
+//        holder.binding.tvTime.setText(model.getTvDay());
         holder.binding.tvFirstName.setText(model.getTvFName());
 
 

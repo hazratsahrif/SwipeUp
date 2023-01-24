@@ -78,10 +78,10 @@
         android:focusable="true"
         style="@style/PinWidget.PinView"
         app:itemCount="4"
-        app:itemHeight="48dp"
+
         app:itemRadius="12dp"
         app:itemSpacing="16dp"
-        app:itemWidth="70dp"
+
         app:lineColor="@drawable/linecolor"
         app:lineWidth="1.4dp"
         app:viewType="rectangle" />
@@ -91,7 +91,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="40dp"
-
         android:progressTint="@color/red"
 
 

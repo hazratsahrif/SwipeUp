@@ -63,6 +63,7 @@ public class LikesAdapter extends RecyclerView.Adapter{
             {
                 holderOne.binding.cvBorder.setStrokeColor(ContextCompat.getColor(context,R.color.red));
                 holderOne.binding.liveLayout.setVisibility(View.VISIBLE);
+                holderOne.binding.paddingLayout.setPadding(12,0,0,0);
             }
             else
             {

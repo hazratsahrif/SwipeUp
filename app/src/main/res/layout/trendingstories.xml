@@ -84,7 +84,7 @@
             android:orientation="vertical"
             >
           <com.google.android.material.card.MaterialCardView
-              android:layout_width="42dp"
+              android:layout_width="44dp"
               app:cardCornerRadius="100dp"
               app:cardBackgroundColor="@android:color/transparent"
               app:strokeColor="#FF5B71"
@@ -93,14 +93,14 @@
               android:elevation="0dp"
               android:layout_marginBottom="8dp"
               app:cardElevation="0dp"
-              android:layout_height="42dp">
+              android:layout_height="44dp">
               <ImageView
-                  android:layout_width="40dp"
-                  android:layout_height="40dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
                   android:src="@drawable/ellipse_9"
                   android:id="@+id/ivAvatar"
                   android:layout_gravity="center"
-                  android:layout_margin="1dp"
+                  android:layout_margin="3dp"
                   />
           </com.google.android.material.card.MaterialCardView>
             <TextView

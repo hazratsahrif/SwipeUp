@@ -116,12 +116,12 @@ public class SearchFragment extends Fragment {
 
             }
         });
-        binding.editText.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                NavHostFragment.findNavController(SearchFragment.this).navigate(R.id.action_navigation_search_to_searchItemFragment);
-            }
-        });
+//        binding.editText.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                NavHostFragment.findNavController(SearchFragment.this).navigate(R.id.action_navigation_search_to_searchItemFragment);
+//            }
+//        });
 
         RecyclerView recyclerView = binding.rv;
         RecyclerView rvLive = binding.rvLive;
@@ -141,12 +141,7 @@ public class SearchFragment extends Fragment {
 
         rvtravel.setLayoutManager(new LinearLayoutManager(getContext(),LinearLayoutManager.HORIZONTAL,false));
         rvtravel.setAdapter(adaptertravel);
-        binding.btnScan.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Navigation.findNavController(view).navigate(R.id.action_navigation_search_to_QRCodeFragment);
-            }
-        });
+
 
         return root;
     }

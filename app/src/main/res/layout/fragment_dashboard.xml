@@ -3,79 +3,78 @@
 xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
-
-    android:orientation="vertical"
-    android:id="@+id/searchFragment"
+android:orientation="vertical"
+android:id="@+id/searchFragment"
 android:layout_height="match_parent"
 tools:context=".ui.search.SearchFragment">
 
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:layout_width="match_parent"
-        android:paddingVertical="12dp"
-        android:backgroundTint="@color/white"
-        android:layout_height="wrap_content">
+<!--    <com.google.android.material.appbar.AppBarLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:paddingVertical="12dp"-->
+<!--        android:backgroundTint="@color/white"-->
+<!--        android:layout_height="wrap_content">-->
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_marginTop="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_height="wrap_content">
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_marginLeft="16dp"-->
+<!--        android:layout_height="wrap_content">-->
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            style="@style/ThemeOverlay.Material3.TextInputEditText.FilledBox"
-            app:boxCornerRadiusBottomEnd="100dp"
-            app:boxCornerRadiusBottomStart="100dp"
-            android:id="@+id/edInput"
-            android:layout_toStartOf="@id/btnScan"
-            app:boxCornerRadiusTopStart="100dp"
-            app:boxCornerRadiusTopEnd="100dp"
-            android:layout_height="wrap_content"
-            app:boxBackgroundColor="#F3F5F6"
-            android:hint="Search anything..."
-            android:textSize="13sp"
-            app:hintEnabled="false"
-            android:focusable="false"
-            android:clickable="true"
-            android:longClickable="false"
-            app:boxStrokeWidth="0dp"
-            app:hintTextColor="@color/black"
-            app:boxStrokeWidthFocused="0dp"
-            android:textColor="#A4ADB7">
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:hint="Search anything..."
-                android:background="@null"
-                android:id="@+id/editText"
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            style="@style/ThemeOverlay.Material3.TextInputEditText.FilledBox"-->
+<!--            app:boxCornerRadiusBottomEnd="100dp"-->
+<!--            app:boxCornerRadiusBottomStart="100dp"-->
+<!--            android:id="@+id/edInput"-->
+<!--            android:layout_toStartOf="@id/btnScan"-->
+<!--            app:boxCornerRadiusTopStart="100dp"-->
+<!--            app:boxCornerRadiusTopEnd="100dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:boxBackgroundColor="#F3F5F6"-->
+<!--            android:hint="Search anything..."-->
+<!--            android:textSize="13sp"-->
+<!--            app:hintEnabled="false"-->
+<!--            android:focusable="false"-->
+<!--            android:clickable="true"-->
+<!--            android:longClickable="false"-->
+<!--            app:boxStrokeWidth="0dp"-->
+<!--            app:hintTextColor="@color/black"-->
+<!--            app:boxStrokeWidthFocused="0dp"-->
+<!--            android:textColor="#A4ADB7">-->
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:hint="Search anything..."-->
+<!--                android:background="@null"-->
+<!--                android:id="@+id/editText"-->
 
-                android:drawableStart="@drawable/search"
-                android:inputType="none"
-                android:focusable="false"
-                android:textSize="13sp"
-                android:drawablePadding="8dp"
-                android:clickable="true"
-                android:longClickable="false"
-                android:textCursorDrawable="@drawable/curser"
-                android:paddingVertical="11dp"
-                android:layout_height="wrap_content"
-                />
-        </com.google.android.material.textfield.TextInputLayout>
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:id="@+id/btnScan"
-            android:layout_marginHorizontal="20dp"
-            android:src="@drawable/scan"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            android:layout_alignParentRight="true"
-            android:layout_centerHorizontal="true"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            />
+<!--                android:drawableStart="@drawable/search"-->
+<!--                android:inputType="none"-->
+<!--                android:focusable="false"-->
+<!--                android:textSize="13sp"-->
+<!--                android:drawablePadding="8dp"-->
+<!--                android:clickable="true"-->
+<!--                android:longClickable="false"-->
+<!--                android:textCursorDrawable="@drawable/curser"-->
+<!--                android:paddingVertical="11dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                />-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+<!--        <ImageButton-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:id="@+id/btnScan"-->
+<!--            android:layout_marginHorizontal="20dp"-->
+<!--            android:src="@drawable/scan"-->
+<!--            android:background="?attr/selectableItemBackgroundBorderless"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            />-->
 
-    </RelativeLayout>
+<!--    </RelativeLayout>-->
 
-    </com.google.android.material.appbar.AppBarLayout>
+<!--    </com.google.android.material.appbar.AppBarLayout>-->
 
 
     <ScrollView

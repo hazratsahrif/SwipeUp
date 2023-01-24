@@ -10,13 +10,13 @@
         android:id="@+id/tvDay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="12dp"
+
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
         android:fontFamily="@font/inter_medium"
         android:text="Yesterday"
         android:textSize="13sp"
-        android:visibility="gone"
+        android:visibility="visible"
          />
 
     <LinearLayout

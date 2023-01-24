@@ -7,42 +7,41 @@
     android:orientation="vertical"
     tools:context=".ui.chat.ChatFragment">
 
-    <com.google.android.material.appbar.MaterialToolbar
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
+        android:backgroundTint="@color/white"
+        android:elevation="0dp"
+        app:elevation="0dp"
+
         android:layout_height="wrap_content">
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
+            android:paddingVertical="16dp"
             android:layout_height="wrap_content">
-            <View
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Inbox"
+                android:layout_centerHorizontal="true"
                 android:textStyle="bold"
                 android:textColor="@color/light_black"
                 android:textSize="18sp"
 
                 />
-            <View
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                />
+
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/send"
+                android:layout_alignParentRight="true"
                 android:id="@+id/btnChat"
                 android:layout_marginRight="16dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 />
-        </LinearLayout>
+        </RelativeLayout>
 
-    </com.google.android.material.appbar.MaterialToolbar>
+    </com.google.android.material.appbar.AppBarLayout>
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabs"
         app:tabInlineLabel="true"

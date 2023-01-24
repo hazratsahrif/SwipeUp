@@ -34,9 +34,6 @@
         <action
             android:id="@+id/action_navigation_search_to_searchItemFragment"
             app:destination="@id/searchItemFragment" />
-        <action
-            android:id="@+id/action_navigation_search_to_QRCodeFragment"
-            app:destination="@id/QRCodeFragment" />
     </fragment>
 
     <fragment
@@ -502,6 +499,15 @@
         android:label="fragment_email_tab"
         tools:layout="@layout/fragment_email_tab" >
 
+    </fragment>
+    <fragment
+        android:id="@+id/discoverFragment"
+        android:name="com.example.myapplication.ui.search.DiscoverFragment"
+        android:label="fragment_discover"
+        tools:layout="@layout/fragment_discover" >
+        <action
+            android:id="@+id/action_discoverFragment_to_QRCodeFragment"
+            app:destination="@id/QRCodeFragment" />
     </fragment>
 
 
