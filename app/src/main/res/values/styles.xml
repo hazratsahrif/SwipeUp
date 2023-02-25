@@ -33,6 +33,18 @@
         <item name="colorAccent">#D8CACA</item>
 
     </style>
+    <style name="DialogTheme" parent="android:Theme.Material.Light.Dialog">
+        <!-- Put the two options, colorAccent and android:colorAccent. -->
+        <item name="colorAccent">@color/red</item>
+        <item name="android:colorPrimary">@color/red</item>
+        <item name="android:colorAccent">@color/red</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/DialogButtonStyled</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/DialogButtonStyled</item>
+    </style>
+    <style name="DialogButtonStyled" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">@color/red</item> <!-- button text color -->
+        <item name="android:textAllCaps">false</item> <!-- button text color -->
+    </style>
 
 
 </resources>

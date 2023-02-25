@@ -84,7 +84,6 @@
         app:boxStrokeWidthFocused="1.5dp"
         android:layout_marginTop="24dp"
         app:hintEnabled="false"
-
         app:errorTextColor="@color/red"
         android:layout_marginHorizontal="20dp"
         app:boxCornerRadiusTopEnd="12dp"
@@ -96,7 +95,6 @@
             android:hint="Page name"
             android:textColorHint="@color/hint_color"
             android:background="@null"
-
             android:id="@+id/editText"
             android:focusedByDefault="true"
             android:lines="1"
