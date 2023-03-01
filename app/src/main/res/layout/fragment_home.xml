@@ -215,6 +215,7 @@
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:text="Follow"
+                   android:id="@+id/btnFollow"
                    android:minHeight="0dp"
                    android:paddingHorizontal="6dp"
                    android:paddingVertical="2dp"

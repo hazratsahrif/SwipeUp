@@ -1,10 +1,12 @@
 package com.example.myapplication.ui.signup;
 
 import android.app.DatePickerDialog;
+import android.app.Dialog;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
+import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 import androidx.navigation.fragment.NavHostFragment;
@@ -16,16 +18,21 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.accessibility.AccessibilityManager;
+import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.example.myapplication.R;
 import com.example.myapplication.databinding.EffectLayoutBinding;
+
 import com.example.myapplication.databinding.FragmentBirthDayBinding;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
 import java.util.Calendar;
+
+import utils.DatePickerDialogFragment;
 
 
 public class BirthDayFragment extends Fragment {
@@ -45,38 +52,72 @@ public class BirthDayFragment extends Fragment {
         year = calendar.get(Calendar.YEAR);
         month = calendar.get(Calendar.MONTH);
 
+
+
         binding.etInput.setEndIconOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 calendar = Calendar.getInstance();
+                binding.etInput.setBoxStrokeColor(ContextCompat.getColor(getContext(),R.color.red));
                 year = calendar.get(Calendar.YEAR);
                 month = calendar.get(Calendar.MONTH);
                 dayOfMonth = calendar.get(Calendar.DAY_OF_MONTH);
-                datePickerDialog = new DatePickerDialog(getContext(), R.style.DialogTheme,
-                        new DatePickerDialog.OnDateSetListener() {
-                            @Override
-                            public void onDateSet(DatePicker datePicker, int year, int month, int day) {
-//                                date.setText(day + "/" + (month + 1) + "/" + year);
-                                binding.editText.setText((day + "/" + (month + 1) + "/" + year));
-                            }
-                        }, year, month, dayOfMonth);
+                Dialog dialog = new Dialog(getActivity());
 
-                datePickerDialog.getDatePicker().setMinDate(System.currentTimeMillis());
-                datePickerDialog.getDatePicker().setBackgroundColor(CalendarContract.Colors.TYPE_CALENDAR);
-                datePickerDialog.show();
-                if(binding.editText.toString().length()>0){
-                    binding.btnNext.setBackgroundColor(ContextCompat.getColor(getContext(),R.color.red));
-                    binding.etInput.setBoxStrokeColor(ContextCompat.getColor(getContext(),R.color.green));
+                dialog.setContentView(R.layout.fragment_date_picker_dialog);
+                Button btnDone = (Button) dialog.findViewById(R.id.btnDone);
+                DatePicker datePicker = (DatePicker) dialog.findViewById(R.id.start_date_text);
+                datePicker.updateDate(calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH));
 
-
-                }
-                else {
-                    binding.btnNext.setBackgroundColor(ContextCompat.getColor(getContext(),R.color.hint_color));
-                }
-
+//                final DialogFragment dateFrag = new DatePickerDialogFragment();
+//                dateFrag.show(getActivity().getSupportFragmentManager(), "datePicker");
+                dialog.show();
+                btnDone.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        binding.editText.setText((datePicker.getDayOfMonth() + "/" + (datePicker.getMonth()) + "/" + datePicker.getYear()));
+                        dialog.dismiss();
+                    }
+                });
             }
 
         });
+
+
+//        binding.etInput.setEndIconOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                calendar = Calendar.getInstance();
+//                year = calendar.get(Calendar.YEAR);
+//                month = calendar.get(Calendar.MONTH);
+//                dayOfMonth = calendar.get(Calendar.DAY_OF_MONTH);
+//                datePickerDialog = new DatePickerDialog(getContext(), R.style.DialogTheme,
+//                        new DatePickerDialog.OnDateSetListener() {
+//                            @Override
+//                            public void onDateSet(DatePicker datePicker, int year, int month, int day) {
+////                                date.setText(day + "/" + (month + 1) + "/" + year);
+//                                binding.editText.setText((day + "/" + (month + 1) + "/" + year));
+//                            }
+//                        }, year, month, dayOfMonth);
+//
+//                datePickerDialog.getDatePicker().setLayoutMode(2);
+//
+//                datePickerDialog.getDatePicker().setMinDate(System.currentTimeMillis());
+//                datePickerDialog.getDatePicker().setBackgroundColor(CalendarContract.Colors.TYPE_CALENDAR);
+//                datePickerDialog.show();
+//                if(binding.editText.toString().length()>0){
+//                    binding.btnNext.setBackgroundColor(ContextCompat.getColor(getContext(),R.color.red));
+//                    binding.etInput.setBoxStrokeColor(ContextCompat.getColor(getContext(),R.color.green));
+//
+//
+//                }
+//                else {
+//                    binding.btnNext.setBackgroundColor(ContextCompat.getColor(getContext(),R.color.hint_color));
+//                }
+//
+//            }
+//
+//        });
 
 
         binding.editText.addTextChangedListener(new TextWatcher() {

@@ -3,6 +3,7 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
     android:orientation="vertical"
+    android:id="@+id/bottomSheet"
     android:layout_height="match_parent"
 
 tools:context="utils.CommentBottomSheet"
@@ -12,7 +13,7 @@ tools:context="utils.CommentBottomSheet"
         android:layout_width="match_parent"
 
         android:layout_height="match_parent">
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:orientation="vertical"
             android:id="@+id/bottomsheet"
@@ -24,12 +25,15 @@ tools:context="utils.CommentBottomSheet"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/bar"
+                android:id="@+id/firstLayout"
+                android:layout_centerHorizontal="true"
                 android:layout_marginTop="10dp"
                 android:layout_gravity="center"
                 />
             <RelativeLayout
+                android:layout_below="@id/firstLayout"
                 android:layout_width="wrap_content"
-                android:layout_alignParentTop="true"
+                android:id="@+id/secondLayout"
                 android:paddingTop="16dp"
                 android:paddingBottom="8dp"
                 android:layout_height="wrap_content"
@@ -63,23 +67,26 @@ tools:context="utils.CommentBottomSheet"
 
             <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"
-                android:layout_height="400dp"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@id/secondLayout"
                 android:id="@+id/rv"
                 android:clipToPadding="false"
-                android:layout_alignParentTop="true"
                 android:layout_above="@id/footer"
                 />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:id="@+id/footer"
+                android:layout_alignParentBottom="true"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:orientation="vertical">
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:layout_width="match_parent"
-                    android:layout_marginHorizontal="9dp"
+
+                    android:layout_marginLeft="9dp"
                     android:layout_height="wrap_content"
                     android:clipToPadding="true"
                     android:id="@+id/rvEmoji"
@@ -173,7 +180,7 @@ tools:context="utils.CommentBottomSheet"
 
             <!--       -->
             <!--    </ScrollView>-->
-        </LinearLayout>
+        </RelativeLayout>
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 

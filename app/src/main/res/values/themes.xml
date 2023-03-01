@@ -54,4 +54,5 @@
     <style name="GifAppModalStyle" parent="Widget.Design.BottomSheet.Modal">
         <item name="android:background">@drawable/gif_dialog_back</item>
     </style>
+
 </resources>

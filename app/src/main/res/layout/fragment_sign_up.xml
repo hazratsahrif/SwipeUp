@@ -15,13 +15,12 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_marginLeft="24dp"
-            android:layout_marginVertical="12dp"
-            android:layout_marginRight="16dp"
+            android:layout_marginVertical="16dp"
+            android:layout_marginRight="24dp"
             android:layout_height="wrap_content">
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="1dp"
                 android:layout_centerVertical="true"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:src="@drawable/back"
@@ -33,6 +32,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Sign Up"
+
                 android:textSize="18sp"
                 android:layout_centerHorizontal="true"
                 android:textColor="@color/black"
@@ -48,14 +48,12 @@
             android:paddingVertical="0.5dp"
             android:scrollbars="none"
             android:layout_marginTop="7dp"
-
             android:fillViewport="true"
             android:isScrollContainer="false"
             app:tabMode="fixed"
             app:tabSelectedTextColor="@color/red"
             android:layout_marginHorizontal="92dp"
             app:tabIndicatorFullWidth="false"
-
             android:layout_gravity="center"
             android:clipToPadding="true"
             app:tabTextColor="#6C7989"
@@ -63,6 +61,7 @@
             app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
             app:tabIndicatorColor="@color/red"
             android:layout_height="43dp" >
+
 
 
 

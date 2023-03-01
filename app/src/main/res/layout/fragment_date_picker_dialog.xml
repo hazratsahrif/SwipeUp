@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="utils.DatePickerDialogFragment">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date of birth"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        />
+
+    <DatePicker
+        android:id="@+id/start_date_text"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:datePickerMode="spinner"
+        android:theme="@style/MyDatePicker"
+        android:calendarViewShown="false"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:text="Done"
+        android:letterSpacing="0"
+        android:id="@+id/btnDone"
+        android:layout_marginHorizontal="20dp"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/red"
+        android:fontFamily="@font/inter_medium"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+
+        />
+</LinearLayout>

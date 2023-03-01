@@ -8,7 +8,7 @@
     <string name="following">Following</string>
     <string name="for_you">For You</string>
     <string name="don_t_have">Don’t have an account yet? Go to<b><font color="#FF5B71"> Sign Up</font></b></string>
-    <string name="already_have">Already have an account? Go to <b><font color="#FF5B71"> Sign In</font></b></string>
+    <string name="already_have">Already have an account? Go to<b><font color="#FF5B71"> Sign In</font></b></string>
     <string name="forgot_passwordt_reset_now">Forgot passwordt?<font color="#FF5B71"> Reset Now</font></string>
     <string name="content">With the idea of imparting programming
       knowledge, Mr. Sandeep Jain, an IIT Roorkee alumnus started a
@@ -51,7 +51,8 @@
     <string name="point6">• access or use the Services if you are not fully able and legally competent to agree to these Terms or are authorized to use the Services by your parent or legal guardian;\n\n • distribute, license, transfer, or sell, in whole or in part, any of the Services or any derivative works thereof.</string>
     <string name="point9">In addition to the above, your access to and use of the Services must, at all times, be compliant with our <b><font color="#FF5B71">Privacy Policy.</font></b> </string>
     <string name="reset">Please enter the verification code we just sent to your email. Didn’t get it?<b><font color="#FF5B71"> Resend code</font></b></string>
-    <string name="make_sure">Make sure your new passwords are<b><font color="#000">at least eight characters long.</font></b> Strong password uses combination of uppercase and lowercase letters, symbols and numbers. But we don’t insist on it.</string>
+    <string name="make_sure">Make sure your new passwords are<b><font color="#000"> at least eight characters long.</font></b> Strong password uses combination of uppercase and lowercase letters, symbols and numbers. But we don’t insist on it.</string>
     <string name="by_entering">By entering your phone number you agree to our<b><font color="#FF5B71"> Terms of Use</font></b> and <b><font color="#FF5B71">Privacy Policy</font></b></string>
     <string name="another_day_another_beach_i_want_to_leave_like_nthis_forever_travel_nature_ocean">Another day, another beach. I want to leave like\nthis forever <b>#travel #nature #ocean</b></string>
+    <string name="already_have_an_account_log_in">Already have an account?<b><font color="#FF5B71"> Log in</font></b> </string>
 </resources>

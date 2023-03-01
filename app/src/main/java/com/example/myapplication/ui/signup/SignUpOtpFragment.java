@@ -23,14 +23,21 @@ public class SignUpOtpFragment extends Fragment {
 
     FragmentSignUpOtpBinding binding;
 
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         binding = FragmentSignUpOtpBinding.inflate(inflater,container,false);
+
         binding.btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Navigation.findNavController(view).navigateUp();
             }
         });
@@ -47,6 +54,7 @@ public class SignUpOtpFragment extends Fragment {
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
                 if(charSequence.toString().length()==4){
                     NavHostFragment.findNavController(SignUpOtpFragment.this).navigate(R.id.action_signUpOtpFragment_to_chooseUserNameFragment);
+                    pinView.setText("");
 
                 }
                 else {
@@ -59,5 +67,10 @@ public class SignUpOtpFragment extends Fragment {
             }
         });
         return binding.getRoot();
+
     }
+
+
+
+
 }

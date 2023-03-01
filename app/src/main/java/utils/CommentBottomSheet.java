@@ -2,12 +2,16 @@ package utils;
 
 import android.os.Bundle;
 
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
+import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import com.example.myapplication.R;
 import com.example.myapplication.databinding.FragmentCommentBottomSheetBinding;
@@ -32,7 +36,19 @@ public class CommentBottomSheet extends BottomSheetDialogFragment implements Com
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+
         binding = FragmentCommentBottomSheetBinding.inflate(inflater,container,false);
+        DisplayMetrics displayMetrics = new DisplayMetrics();
+        getActivity().getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
+
+        int halfScreenHeight = displayMetrics.heightPixels / 2;
+        RelativeLayout linearLayout = binding.bottomsheet;
+
+        CoordinatorLayout.LayoutParams params = (CoordinatorLayout.LayoutParams) linearLayout.getLayoutParams();
+        params.height = halfScreenHeight;
+
+        linearLayout.setLayoutParams(params);
+
 //        View bottomSheet = binding.bottomsheet;
 //        BottomSheetBehavior behavior = BottomSheetBehavior.from(bottomSheet);
 //        behavior.setPeekHeight(650);

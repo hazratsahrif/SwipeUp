@@ -23,6 +23,9 @@
         <action
             android:id="@+id/action_navigation_home_to_userProfileFragment"
             app:destination="@id/userProfileFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_splashDialogFragment"
+            app:destination="@id/splashDialogFragment" />
 
     </fragment>
 
@@ -436,10 +439,15 @@
         android:id="@+id/signUpFragment"
         android:name="com.example.myapplication.ui.signup.SignUpFragment"
         android:label="fragment_sign_up"
+
         tools:layout="@layout/fragment_sign_up" >
         <action
             android:id="@+id/action_signUpFragment_to_signUpOtpFragment"
-            app:destination="@id/signUpOtpFragment" />
+            app:destination="@id/signUpOtpFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_right"
+            app:popExitAnim="@anim/to_right"
+             />
         <action
             android:id="@+id/action_signUpFragment_to_signInFragment"
             app:destination="@id/signInFragment" />
@@ -451,7 +459,11 @@
         tools:layout="@layout/fragment_choose_user_name" >
         <action
             android:id="@+id/action_chooseUserNameFragment_to_choosePageNameFragment"
-            app:destination="@id/choosePageNameFragment" />
+            app:destination="@id/choosePageNameFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_right"
+            app:popExitAnim="@anim/to_right"
+            />
     </fragment>
     <fragment
         android:id="@+id/choosePageNameFragment"
@@ -460,7 +472,11 @@
         tools:layout="@layout/fragment_choose_page_name" >
         <action
             android:id="@+id/action_choosePageNameFragment_to_birthDayFragment"
-            app:destination="@id/birthDayFragment" />
+            app:destination="@id/birthDayFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_right"
+            app:popExitAnim="@anim/to_right"
+            />
     </fragment>
     <fragment
         android:id="@+id/birthDayFragment"
@@ -469,7 +485,11 @@
         tools:layout="@layout/fragment_birth_day" >
         <action
             android:id="@+id/action_birthDayFragment_to_setPasswordFragment"
-            app:destination="@id/setPasswordFragment" />
+            app:destination="@id/setPasswordFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_right"
+            app:popExitAnim="@anim/to_right"
+            />
     </fragment>
     <fragment
         android:id="@+id/setPasswordFragment"
@@ -483,7 +503,12 @@
         tools:layout="@layout/fragment_sign_up_otp" >
         <action
             android:id="@+id/action_signUpOtpFragment_to_chooseUserNameFragment"
-            app:destination="@id/chooseUserNameFragment" />
+            app:destination="@id/chooseUserNameFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_right"
+            app:popExitAnim="@anim/to_right"
+
+            />
 
     </fragment>
     <fragment
@@ -509,6 +534,11 @@
             android:id="@+id/action_discoverFragment_to_QRCodeFragment"
             app:destination="@id/QRCodeFragment" />
     </fragment>
+    <dialog
+        android:id="@+id/splashDialogFragment"
+        android:name="utils.SplashDialogFragment"
+        android:label="fragment_splash_dialog"
+        tools:layout="@layout/fragment_splash_dialog" />
 
 
 </navigation>
